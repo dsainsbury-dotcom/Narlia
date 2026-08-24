@@ -1,1 +1,40 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Narlia's World</title><script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script></head><body><div id="status" style="font-family:Arial;padding:20px">Loading Narlia's World…</div><script>(async()=>{try{const r=await fetch('dashboard.b64?v=4',{cache:'no-store'});if(!r.ok)throw new Error('Could not fetch dashboard data ('+r.status+')');let raw=(await r.text()).replace(/[^A-Za-z0-9+/=]/g,'');if(!raw)throw new Error('Dashboard data is empty');while(raw.length%4)raw+='=';const bin=Uint8Array.from(atob(raw),c=>c.charCodeAt(0));let txt;if(typeof DecompressionStream!=='undefined'){const ds=new DecompressionStream('gzip');txt=await new Response(new Blob([bin]).stream().pipeThrough(ds)).text();}else if(window.pako){txt=new TextDecoder().decode(pako.ungzip(bin));}else{throw new Error('This browser cannot decompress the dashboard');}if(!/^\s*<!doctype html/i.test(txt))throw new Error('Decoded dashboard is invalid');document.open();document.write(txt);document.close();}catch(e){document.getElementById('status').innerHTML='<h2>Narlia\'s World could not load</h2><p>'+String(e.message||e)+'</p><p>Please refresh the page. If this message remains, send it to Darren.</p>';}})();</script></body></html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Narlia's World</title>
+<script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
+</head>
+<body>
+<div id="status" style="font-family:Arial,sans-serif;padding:24px">Loading Narlia's World...</div>
+<script>
+(async function(){
+  try {
+    const urls=['dashboard-part1.b64?v=24aug-final','dashboard-part2.b64?v=24aug-final'];
+    const parts=[];
+    for(const url of urls){
+      const r=await fetch(url,{cache:'no-store'});
+      if(!r.ok) throw new Error('Could not load '+url+' ('+r.status+')');
+      const part=(await r.text()).trim();
+      if(!part) throw new Error(url+' is empty');
+      parts.push(part);
+    }
+    const raw=parts.join('');
+    if(raw.length!==37104) throw new Error('Dashboard payload incomplete: '+raw.length+' of 37104 characters loaded');
+    if(raw.length%4!==0) throw new Error('Dashboard payload alignment is invalid');
+    if(!window.pako) throw new Error('Dashboard decompression library did not load');
+    const bin=Uint8Array.from(atob(raw),c=>c.charCodeAt(0));
+    const txt=new TextDecoder().decode(pako.ungzip(bin));
+    if(!/^\s*<!doctype html/i.test(txt)) throw new Error('Decoded dashboard is invalid');
+    if(!txt.includes('24 Aug 2026')) throw new Error('Latest dashboard date check failed');
+    document.open();
+    document.write(txt);
+    document.close();
+  } catch(e) {
+    document.getElementById('status').innerHTML='<h2>Narlia\'s World could not load</h2><p>'+String(e.message||e)+'</p><p>Please send this exact message to Darren.</p>';
+  }
+})();
+</script>
+</body>
+</html>
