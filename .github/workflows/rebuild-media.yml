@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'deploy-b64/**'
+      - 'deploy-b64/manifest.json'
 
 permissions:
   contents: write
@@ -22,7 +22,7 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import base64, hashlib, json, re, sys
+          import base64, hashlib, json
 
           root = Path('deploy-b64')
           manifest_path = root / 'manifest.json'
@@ -38,11 +38,7 @@ jobs:
                   raise SystemExit('Missing payload parts: ' + ', '.join(missing))
 
               payload = ''.join(p.read_text().strip() for p in parts)
-              try:
-                  raw = base64.b64decode(payload, validate=True)
-              except Exception as e:
-                  raise SystemExit(f'Invalid base64 for {target}: {e}')
-
+              raw = base64.b64decode(payload, validate=True)
               digest = hashlib.sha256(raw).hexdigest()
               if digest != item['sha256']:
                   raise SystemExit(f'Checksum mismatch for {target}: {digest}')
