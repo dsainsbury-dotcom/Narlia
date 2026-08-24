@@ -1,0 +1,1 @@
+Reliable binary media pipeline setup in progress. Cat-related GPX, photos, videos, notes and corrections trigger a site rebuild and publish.
