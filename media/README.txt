@@ -1,0 +1,1 @@
+Journey media is published as normal JPEG/MP4 files. Cat-related uploads and notes trigger a full site rebuild and publish.
