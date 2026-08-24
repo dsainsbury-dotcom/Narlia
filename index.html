@@ -25,9 +25,10 @@
     if(raw.length%4!==0) throw new Error('Dashboard payload alignment is invalid');
     if(!window.pako) throw new Error('Dashboard decompression library did not load');
     const bin=Uint8Array.from(atob(raw),c=>c.charCodeAt(0));
-    const txt=new TextDecoder().decode(pako.ungzip(bin));
+    let txt=new TextDecoder().decode(pako.ungzip(bin));
     if(!/^\s*<!doctype html/i.test(txt)) throw new Error('Decoded dashboard is invalid');
     if(!txt.includes('24 Aug 2026')) throw new Error('Latest dashboard date check failed');
+    txt=txt.replace('</body>','<script src="journey-patch.js?v=journey1"><\/script></body>');
     document.open();
     document.write(txt);
     document.close();
