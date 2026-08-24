@@ -1,0 +1,68 @@
+name: Rebuild Journey media
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'deploy-b64/**'
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild-media:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Decode and validate media
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64, hashlib, json, re, sys
+
+          root = Path('deploy-b64')
+          manifest_path = root / 'manifest.json'
+          if not manifest_path.exists():
+              raise SystemExit('deploy-b64/manifest.json missing')
+
+          manifest = json.loads(manifest_path.read_text())
+          for item in manifest['files']:
+              target = Path(item['target'])
+              parts = [root / p for p in item['parts']]
+              missing = [str(p) for p in parts if not p.exists()]
+              if missing:
+                  raise SystemExit('Missing payload parts: ' + ', '.join(missing))
+
+              payload = ''.join(p.read_text().strip() for p in parts)
+              try:
+                  raw = base64.b64decode(payload, validate=True)
+              except Exception as e:
+                  raise SystemExit(f'Invalid base64 for {target}: {e}')
+
+              digest = hashlib.sha256(raw).hexdigest()
+              if digest != item['sha256']:
+                  raise SystemExit(f'Checksum mismatch for {target}: {digest}')
+
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(raw)
+              print(f'Wrote {target} ({len(raw)} bytes)')
+          PY
+
+      - name: Commit rebuilt media
+        shell: bash
+        run: |
+          git config user.name 'Narlia Journey Publisher'
+          git config user.email 'actions@users.noreply.github.com'
+          git add media/
+          rm -rf deploy-b64
+          git add -A deploy-b64/
+          if git diff --cached --quiet; then
+            echo 'No media changes to commit'
+          else
+            git commit -m 'Publish Journey media [skip ci]'
+            git push
+          fi
