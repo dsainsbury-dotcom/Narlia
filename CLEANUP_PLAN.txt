@@ -1,0 +1,1 @@
+Remove obsolete video scripts, video media, staging folders and temporary test files; retain photo-only Journey and Dante still image.
