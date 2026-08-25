@@ -1,1 +1,0 @@
-Binary publish pipeline preparing direct Git blobs.
