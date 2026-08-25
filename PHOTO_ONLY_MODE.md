@@ -1,1 +1,3 @@
-Photo-only Journey mode enabled. Videos are no longer used. New cat-related photos, notes, GPX updates, milestones, identity confirmations, corrections and other entries trigger a dashboard/site update.
+# Photo-only Journey mode
+
+Journey is photo and story based. Do not add video players, video blobs, MP4 media, Base64 video data or video-repair scripts. Use real JPEG/PNG photo files for Journey media, including still images extracted from supplied videos when needed.
