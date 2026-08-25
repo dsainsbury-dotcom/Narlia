@@ -28,7 +28,7 @@
     let txt=new TextDecoder().decode(pako.ungzip(bin));
     if(!/^\s*<!doctype html/i.test(txt)) throw new Error('Decoded dashboard is invalid');
     if(!txt.includes('24 Aug 2026')) throw new Error('Latest dashboard date check failed');
-    txt=txt.replace('</body>','<script src="dante-photo-data.js?v=repair-1"><\/script><script src="journey-patch.js?v=repair-1"><\/script></body>');
+    txt=txt.replace('</body>','<script src="dante-photo-data.js?v=repair-1"><\/script><script src="journey-patch.js?v=2026-08-25-photo-restored"><\/script></body>');
     document.open();
     document.write(txt);
     document.close();
