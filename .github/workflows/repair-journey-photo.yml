@@ -1,0 +1,60 @@
+name: Repair Journey photo
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'repair-photo.trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Convert Journey WebP to JPEG
+        shell: bash
+        run: |
+          python3 -m pip install --quiet pillow
+          python3 - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          src = Path('media/2026-08-25-amara-dante-with-mum.webp')
+          dst = Path('media/2026-08-25-amara-dante-with-mum.jpg')
+          im = Image.open(src)
+          im.load()
+          print('SOURCE', im.format, im.size, im.mode)
+          im = im.convert('RGB')
+          if max(im.size) > 1200:
+              im.thumbnail((1200,1200), Image.Resampling.LANCZOS)
+          im.save(dst, 'JPEG', quality=90, optimize=True, progressive=True)
+          check = Image.open(dst)
+          check.verify()
+          print('WROTE', dst, dst.stat().st_size)
+          p = Path('journey-patch.js')
+          s = p.read_text()
+          s = s.replace('media/2026-08-25-amara-dante-with-mum.webp?v=3','media/2026-08-25-amara-dante-with-mum.jpg?v=1')
+          s = s.replace('media/2026-08-25-amara-dante-with-mum.webp?v=2','media/2026-08-25-amara-dante-with-mum.jpg?v=1')
+          s = s.replace('media/2026-08-25-amara-dante-with-mum.webp?v=1','media/2026-08-25-amara-dante-with-mum.jpg?v=1')
+          p.write_text(s)
+          lp = Path('launch-20260825.html')
+          if lp.exists():
+              t = lp.read_text()
+              import re
+              t = re.sub(r'journey-patch\.js\?v=[^"<]+', 'journey-patch.js?v=jpeg-photo-1', t)
+              lp.write_text(t)
+          PY
+
+      - name: Commit repaired JPEG
+        shell: bash
+        run: |
+          git config user.name 'Narlia Journey Publisher'
+          git config user.email 'actions@users.noreply.github.com'
+          git add media/2026-08-25-amara-dante-with-mum.jpg journey-patch.js launch-20260825.html
+          git commit -m 'Repair Dante and Amara Journey photo as JPEG' || exit 0
+          git push
