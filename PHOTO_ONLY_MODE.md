@@ -1,0 +1,1 @@
+Photo-only Journey mode enabled. Videos are no longer used. New cat-related photos, notes, GPX updates, milestones, identity confirmations, corrections and other entries trigger a dashboard/site update.
