@@ -1,1 +1,0 @@
-The live Journey uses a still image from Dante's first solid-food clip. Binary photo replacement is applied in the following commit.
