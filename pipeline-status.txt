@@ -1,1 +1,4 @@
-Reliable binary media pipeline setup in progress. Cat-related GPX, photos, videos, notes and corrections trigger a site rebuild and publish.
+PHOTO-ONLY JOURNEY PIPELINE
+Status: active
+Latest update: 2026-08-25 Amara and Dante cuddled with mum
+Rule: cat-related uploads and notes trigger publish automatically.
