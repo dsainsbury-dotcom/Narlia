@@ -1,1 +1,0 @@
-Photo-only cleanup in progress.
