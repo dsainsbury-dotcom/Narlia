@@ -28,7 +28,7 @@
     let txt=new TextDecoder().decode(pako.ungzip(bin));
     if(!/^\s*<!doctype html/i.test(txt)) throw new Error('Decoded dashboard is invalid');
     if(!txt.includes('24 Aug 2026')) throw new Error('Latest dashboard date check failed');
-    txt=txt.replace('</body>','<script src="journey-video-data.js?v=video2"><\/script><script src="journey-patch.js?v=journey3"><\/script><script src="journey-video-fix.js?v=video2"><\/script></body>');
+    txt=txt.replace('</body>','<script src="journey-patch.js?v=photo-only-1"><\/script></body>');
     document.open();
     document.write(txt);
     document.close();
