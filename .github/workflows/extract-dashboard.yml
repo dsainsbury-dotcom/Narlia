@@ -1,6 +1,8 @@
 name: Extract dashboard source
 on:
-  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/extract-dashboard.yml'
 permissions:
   contents: write
 jobs:
