@@ -1,0 +1,26 @@
+name: Validate infographic release
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'infographic-toggle.js'
+      - 'index.html'
+      - 'launch-20260825.html'
+      - '.github/workflows/validate-infographic-release.yml'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JavaScript syntax
+        run: node --check infographic-toggle.js
+      - name: Validate release wiring
+        shell: bash
+        run: |
+          grep -q 'Recent (7 Days)' infographic-toggle.js
+          grep -q 'All Time' infographic-toggle.js
+          grep -q '20260826-alltime-v1' index.html
+          grep -q 'infographic-toggle.js' index.html
+          grep -q '20260826-alltime-v1' launch-20260825.html
+          grep -q 'infographic-toggle.js' launch-20260825.html
+          echo 'Infographic release wiring validated'
