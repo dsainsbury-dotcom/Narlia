@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'infographic-toggle.js'
+      - 'gpx-live-data.js'
       - 'index.html'
       - 'launch-20260825.html'
       - '.github/workflows/validate-infographic-release.yml'
@@ -13,14 +14,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate JavaScript syntax
-        run: node --check infographic-toggle.js
+        run: |
+          node --check infographic-toggle.js
+          node --check gpx-live-data.js
       - name: Validate release wiring
         shell: bash
         run: |
           grep -q 'Recent (7 Days)' infographic-toggle.js
           grep -q 'All Time' infographic-toggle.js
-          grep -q '20260826-alltime-v1' index.html
+          grep -q '20260826-gpx7-1' index.html
+          grep -q 'gpx-live-data.js' index.html
           grep -q 'infographic-toggle.js' index.html
-          grep -q '20260826-alltime-v1' launch-20260825.html
-          grep -q 'infographic-toggle.js' launch-20260825.html
-          echo 'Infographic release wiring validated'
+          grep -q '20260826-gpx7-1' launch-20260825.html
+          grep -q 'gpx-live-data.js' launch-20260825.html
+          grep -q 'overlap_timestamps:18' gpx-live-data.js
+          grep -q 'new_timestamps_added:142' gpx-live-data.js
+          echo 'GPX and infographic release wiring validated'
