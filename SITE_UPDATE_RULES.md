@@ -2,7 +2,7 @@
 
 Any new cat-related input triggers a site update and publish. This includes GPX files, photos, written notes, milestones, birthdays/events, identity confirmations, corrections and other story information.
 
-- GPX: merge/deduplicate, apply the agreed GPS-noise filtering, rebuild Narlia's current GPS analytics/infographic/tabs, and publish.
+- GPX: treat every new upload as an overlapping export. Deduplicate by exact timestamp before any GPS cleaning, smoothing, distance, territory, speed, heatmap, hotspot, daily, lifetime, or infographic calculation. Existing timestamps must never be counted twice; only genuinely new timestamps are added to the lifetime history. After deduplication, apply the agreed GPS-noise filtering, rebuild Narlia's current GPS analytics/infographic/tabs, and publish.
 - Photos: process for web use, add to Journey by real date/age, preserve uncertain identity until confirmed, and publish.
 - Notes/text: add or update the relevant Journey story or metadata and publish.
 - Video uploads are not used in the site. Journey is photo-and-story only.
