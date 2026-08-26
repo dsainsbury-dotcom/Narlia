@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Narlia's World</title>
 <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
 </head>
@@ -11,7 +14,8 @@
 <script>
 (async function(){
   try {
-    const urls=['dashboard-part1.b64?v=24aug-final','dashboard-part2.b64?v=24aug-final'];
+    const build='20260826-alltime-v1';
+    const urls=['dashboard-part1.b64?v='+build,'dashboard-part2.b64?v='+build];
     const parts=[];
     for(const url of urls){
       const r=await fetch(url,{cache:'no-store'});
@@ -28,7 +32,7 @@
     let txt=new TextDecoder().decode(pako.ungzip(bin));
     if(!/^\s*<!doctype html/i.test(txt)) throw new Error('Decoded dashboard is invalid');
     if(!txt.includes('24 Aug 2026')) throw new Error('Latest dashboard date check failed');
-    txt=txt.replace('</body>','<script src="dante-photo-data.js?v=repair-1"><\/script><script src="journey-patch.js?v=repair-1"><\/script></body>');
+    txt=txt.replace('</body>','<script src="dante-photo-data.js?v='+build+'"><\/script><script src="journey-patch.js?v='+build+'"><\/script><script src="infographic-toggle.js?v='+build+'"><\/script></body>');
     document.open();
     document.write(txt);
     document.close();
