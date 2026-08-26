@@ -1,0 +1,36 @@
+name: Extract current dashboard source
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/extract-dashboard-auto.yml'
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Decode dashboard payload
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64,gzip,pathlib
+          p1=pathlib.Path('dashboard-part1.b64').read_text().strip()
+          p2=pathlib.Path('dashboard-part2.b64').read_text().strip()
+          raw=p1+p2
+          html=gzip.decompress(base64.b64decode(raw)).decode('utf-8')
+          pathlib.Path('dashboard-source.html').write_text(html)
+          print('decoded chars',len(html))
+          PY
+      - name: Commit readable source
+        shell: bash
+        run: |
+          git config user.name 'Narlia Dashboard Builder'
+          git config user.email 'actions@users.noreply.github.com'
+          git add dashboard-source.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Extract dashboard source for controlled infographic release [skip ci]'
+          git push
