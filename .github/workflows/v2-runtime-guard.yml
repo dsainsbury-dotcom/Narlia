@@ -1,0 +1,88 @@
+name: V2 runtime guard and backup
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'launch-*.html'
+      - 'dashboard-source.html'
+      - 'dashboard*.b64'
+      - 'data*.js'
+      - 'gpx-live-data*.js'
+      - 'infographic*.js'
+      - 'journey*.js'
+      - '*-photo-data.js'
+      - 'profile-logo.js'
+      - 'assets/**'
+      - 'media/**'
+      - 'images/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: narlia-v2-runtime-guard
+  cancel-in-progress: false
+
+jobs:
+  validate-and-backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate live launcher
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s index.html
+          grep -q "Narlia's World" index.html
+          if [[ -f launch-20260825.html ]]; then
+            index_build=$(grep -o "const build='[^']*'" index.html | head -1 | cut -d"'" -f2)
+            launch_build=$(grep -o "const build='[^']*'" launch-20260825.html | head -1 | cut -d"'" -f2)
+            test -n "$index_build"
+            test "$index_build" = "$launch_build"
+          fi
+
+      - name: Validate JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          files=(data*.js gpx-live-data*.js infographic*.js journey*.js *-photo-data.js profile-logo.js)
+          for f in "${files[@]}"; do
+            echo "Checking $f"
+            node --check "$f"
+          done
+
+      - name: Check GPX overlays for duplicate build declarations
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for f in gpx-live-data-*.js; do
+            count=$(grep -c "const B=" "$f" || true)
+            test "$count" -le 1
+          done
+
+      - name: Create stable backup tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Narlia Backup Bot"
+          git config user.email "actions@users.noreply.github.com"
+          stamp=$(date -u +'%Y%m%d-%H%M%S')
+          short=$(git rev-parse --short=8 HEAD)
+          tag="stable-${stamp}-${short}"
+          if git rev-parse "$tag" >/dev/null 2>&1; then
+            echo "Backup tag already exists: $tag" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git tag -a "$tag" -m "Narlia V2 validated stable backup\nCommit: $(git rev-parse HEAD)\nCreated: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push origin "$tag"
+          echo "### Narlia stable backup created" >> "$GITHUB_STEP_SUMMARY"
+          echo "Backup: $tag" >> "$GITHUB_STEP_SUMMARY"
+          echo "Commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
