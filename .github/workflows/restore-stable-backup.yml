@@ -1,0 +1,47 @@
+name: Restore stable backup
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Stable backup tag to restore, for example stable-20260827-190000-edab9042
+        required: true
+      confirm:
+        description: Type RESTORE to confirm
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    if: ${{ inputs.confirm == 'RESTORE' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch backup tags
+        run: git fetch --tags --force
+
+      - name: Restore live runtime from selected backup
+        shell: bash
+        run: |
+          chmod +x scripts/restore-runtime.sh
+          scripts/restore-runtime.sh "${{ inputs.tag }}"
+
+      - name: Commit restored runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No runtime changes were required." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name "Narlia Restore Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Restore live dashboard from ${{ inputs.tag }}"
+          git push origin HEAD:main
+          echo "Restored live runtime from ${{ inputs.tag }}" >> "$GITHUB_STEP_SUMMARY"
