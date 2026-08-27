@@ -14,7 +14,7 @@
 <script>
 (async function(){
   try {
-    const build='20260827-gpx8-1';
+    const build='20260827-bind1';
     const urls=['dashboard-part1.b64?v='+build,'dashboard-part2.b64?v='+build];
     const parts=[];
     for(const url of urls){
@@ -32,7 +32,7 @@
     let txt=new TextDecoder().decode(pako.ungzip(bin));
     if(!/^\s*<!doctype html/i.test(txt)) throw new Error('Decoded dashboard is invalid');
     if(!txt.includes('24 Aug 2026')) throw new Error('Dashboard base date check failed');
-    txt=txt.replace('</body>','<script src="dante-photo-data.js?v='+build+'"><\/script><script src="journey-patch.js?v='+build+'"><\/script><script src="gpx-live-data.js?v='+build+'"><\/script><script src="gpx-live-data-20260827.js?v='+build+'"><\/script><script src="infographic-toggle.js?v='+build+'"><\/script><script src="profile-logo.js?v='+build+'"><\/script></body>');
+    txt=txt.replace('</body>','<script src="dante-photo-data.js?v='+build+'"><\/script><script src="journey-patch.js?v='+build+'"><\/script><script src="gpx-live-data.js?v='+build+'"><\/script><script src="gpx-live-data-20260827.js?v='+build+'"><\/script><script src="infographic-toggle.js?v='+build+'"><\/script><script src="profile-logo.js?v='+build+'"><\/script><script src="live-bindings.js?v='+build+'"><\/script></body>');
     document.open();
     document.write(txt);
     document.close();
