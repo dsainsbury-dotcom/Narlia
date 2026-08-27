@@ -4,7 +4,7 @@ on:
     branches: [main]
     paths:
       - 'infographic-toggle.js'
-      - 'gpx-live-data.js'
+      - 'gpx-live-data*.js'
       - 'index.html'
       - 'launch-20260825.html'
       - '.github/workflows/validate-infographic-release.yml'
@@ -16,17 +16,20 @@ jobs:
       - name: Validate JavaScript syntax
         run: |
           node --check infographic-toggle.js
-          node --check gpx-live-data.js
+          for f in gpx-live-data*.js; do node --check "$f"; done
       - name: Validate release wiring
         shell: bash
         run: |
           grep -q 'Recent (7 Days)' infographic-toggle.js
           grep -q 'All Time' infographic-toggle.js
-          grep -q '20260826-gpx7-1' index.html
           grep -q 'gpx-live-data.js' index.html
+          grep -q 'gpx-live-data-20260827.js' index.html
           grep -q 'infographic-toggle.js' index.html
-          grep -q '20260826-gpx7-1' launch-20260825.html
           grep -q 'gpx-live-data.js' launch-20260825.html
-          grep -q 'overlap_timestamps:18' gpx-live-data.js
-          grep -q 'new_timestamps_added:142' gpx-live-data.js
-          echo 'GPX and infographic release wiring validated'
+          grep -q 'gpx-live-data-20260827.js' launch-20260825.html
+          index_build=$(grep -o "const build='[^']*'" index.html | head -1 | cut -d"'" -f2)
+          launch_build=$(grep -o "const build='[^']*'" launch-20260825.html | head -1 | cut -d"'" -f2)
+          test -n "$index_build"
+          test "$index_build" = "$launch_build"
+          grep -q "const B='$index_build'" gpx-live-data-20260827.js
+          echo "GPX and infographic release wiring validated: $index_build"
