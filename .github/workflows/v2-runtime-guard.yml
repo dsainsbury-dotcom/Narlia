@@ -1,38 +1,25 @@
-name: V2 runtime guard and backup
+name: V2 manual integrity check
 
+# Legacy V2 guard retained as an on-demand diagnostic only.
+# Automatic release validation and stable backup are handled by
+# validate-infographic-release.yml and create-stable-backup.yml.
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'index.html'
-      - 'launch-*.html'
-      - 'dashboard-source.html'
-      - 'dashboard*.b64'
-      - 'data*.js'
-      - 'gpx-live-data*.js'
-      - 'infographic*.js'
-      - 'journey*.js'
-      - '*-photo-data.js'
-      - 'profile-logo.js'
-      - 'assets/**'
-      - 'media/**'
-      - 'images/**'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: narlia-v2-runtime-guard
+  group: narlia-v2-manual-integrity-check
   cancel-in-progress: false
 
 jobs:
-  validate-and-backup:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Validate live launcher
         shell: bash
@@ -68,21 +55,8 @@ jobs:
             test "$count" -le 1
           done
 
-      - name: Create stable backup tag
+      - name: Report success
         shell: bash
         run: |
-          set -euo pipefail
-          git config user.name "Narlia Backup Bot"
-          git config user.email "actions@users.noreply.github.com"
-          stamp=$(date -u +'%Y%m%d-%H%M%S')
-          short=$(git rev-parse --short=8 HEAD)
-          tag="stable-${stamp}-${short}"
-          if git rev-parse "$tag" >/dev/null 2>&1; then
-            echo "Backup tag already exists: $tag" >> "$GITHUB_STEP_SUMMARY"
-            exit 0
-          fi
-          git tag -a "$tag" -m "Narlia V2 validated stable backup\nCommit: $(git rev-parse HEAD)\nCreated: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-          git push origin "$tag"
-          echo "### Narlia stable backup created" >> "$GITHUB_STEP_SUMMARY"
-          echo "Backup: $tag" >> "$GITHUB_STEP_SUMMARY"
-          echo "Commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Narlia manual integrity check passed" >> "$GITHUB_STEP_SUMMARY"
+          echo "Automatic backups remain handled by the dedicated stable-backup workflow." >> "$GITHUB_STEP_SUMMARY"
