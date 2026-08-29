@@ -1,5 +1,5 @@
 (()=>{
-  const BUILD='20260826-alltime-v1';
+  const BUILD='20260829-alltime-layoutfix-1';
   function ready(){ return typeof DATA!=='undefined' && document.getElementById('infographic'); }
   function fmtDate(s){return s||''}
   function getSummaryCard(){
@@ -81,7 +81,18 @@
     const section=document.getElementById('infographic');
     const telemetry=section.querySelector('.telemetry'); if(!telemetry)return;
     const bar=document.createElement('div'); bar.id='infographicModeSwitch';
-    bar.innerHTML=`<style>.infographic-switch{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 14px;padding:10px 12px;background:#0c1927;border:1px solid #253649;border-radius:10px}.infographic-switch-buttons{display:flex;gap:7px}.infographic-mode{border:1px solid #26394a;background:#0d1a27;color:#cbd6de;border-radius:7px;padding:9px 13px;font-weight:700;cursor:pointer}.infographic-mode.active{background:#15314a;border-color:#2d7db9;color:#fff}.infographic-mode-note{color:#8fa6b7;font-size:12px}</style><div><b>Infographic</b><div id="infographicModeSubtitle" class="infographic-mode-note">Recent • Last 7 Days</div></div><div class="infographic-switch-buttons"><button class="infographic-mode active" data-mode="recent">Recent (7 Days)</button><button class="infographic-mode" data-mode="all">All Time</button></div>`;
+    bar.innerHTML=`<style>
+      .infographic-switch{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 14px;padding:10px 12px;background:#0c1927;border:1px solid #253649;border-radius:10px}
+      .infographic-switch-buttons{display:flex;gap:7px}
+      .infographic-mode{border:1px solid #26394a;background:#0d1a27;color:#cbd6de;border-radius:7px;padding:9px 13px;font-weight:700;cursor:pointer}
+      .infographic-mode.active{background:#15314a;border-color:#2d7db9;color:#fff}
+      .infographic-mode-note{color:#8fa6b7;font-size:12px}
+      #infographic .telemetry{display:grid!important;grid-template-columns:minmax(230px,300px) minmax(0,1fr) minmax(280px,340px)!important;gap:14px!important;align-items:start!important}
+      #infographic .telemetry>*{min-width:0!important;max-width:100%!important;box-sizing:border-box!important}
+      #infographic #infographicMap{width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden!important;box-sizing:border-box!important}
+      #infographic #infographicMap .leaflet-pane,#infographic #infographicMap .leaflet-control-container{max-width:100%}
+      @media(max-width:1100px){#infographic .telemetry{grid-template-columns:1fr!important}#infographic .telemetry>*{width:100%!important}}
+    </style><div><b>Infographic</b><div id="infographicModeSubtitle" class="infographic-mode-note">Recent • Last 7 Days</div></div><div class="infographic-switch-buttons"><button class="infographic-mode active" data-mode="recent">Recent (7 Days)</button><button class="infographic-mode" data-mode="all">All Time</button></div>`;
     section.insertBefore(bar,telemetry);
     bar.querySelectorAll('.infographic-mode').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.mode)));
     let mode='recent'; try{if(localStorage.getItem('narliaInfographicMode')==='all')mode='all';}catch(e){}
