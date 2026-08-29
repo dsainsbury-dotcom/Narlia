@@ -27,18 +27,21 @@ jobs:
           grep -q 'gpx-live-data.js' index.html
           grep -q 'gpx-live-data-20260827.js' index.html
           grep -q 'gpx-live-data-20260828.js' index.html
+          grep -q 'gpx-live-data-20260829.js' index.html
           grep -q 'live-bindings.js' index.html
           grep -q 'infographic-toggle.js' index.html
           grep -q 'gpx-live-data.js' launch-20260825.html
           grep -q 'gpx-live-data-20260827.js' launch-20260825.html
           grep -q 'gpx-live-data-20260828.js' launch-20260825.html
+          grep -q 'gpx-live-data-20260829.js' launch-20260825.html
           grep -q 'live-bindings.js' launch-20260825.html
           index_build=$(grep -o "const build='[^']*'" index.html | head -1 | cut -d"'" -f2)
           launch_build=$(grep -o "const build='[^']*'" launch-20260825.html | head -1 | cut -d"'" -f2)
           test -n "$index_build"
           test "$index_build" = "$launch_build"
-          grep -q "const B='20260828-gpx9-1'" gpx-live-data-20260828.js
-          grep -q "export (9).gpx" gpx-live-data-20260828.js
-          grep -q "NARLIA_GPX_BUILD" gpx-live-data-20260828.js
+          test "$index_build" = "20260829-gpx10-1"
+          grep -q "const B='20260829-gpx10-1'" gpx-live-data-20260829.js
+          grep -q "export (10).gpx" gpx-live-data-20260829.js
+          grep -q "NARLIA_GPX_BUILD" gpx-live-data-20260829.js
           grep -q "NARLIA_BINDINGS_BUILD" live-bindings.js
-          echo "GPX export 9, live bindings and infographic release wiring validated: $index_build"
+          echo "GPX export 10, live bindings and infographic release wiring validated: $index_build"
