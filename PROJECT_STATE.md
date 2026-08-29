@@ -1,6 +1,6 @@
 # Narlia's World - Project State
 
-Last reviewed: 29 Aug 2026
+Last reviewed: 30 Aug 2026
 
 This file is the first source of truth for continuing development in a new ChatGPT conversation.
 
@@ -43,9 +43,16 @@ On every new GPX upload, do this without waiting for a second instruction:
 - Lifetime Story.
 - Last 30 Days.
 - Daily Explorer.
-- Hotspot Investigations.
 - Records.
 - Trends.
+- Hotspot Investigations remains implemented in code but is intentionally hidden from navigation for now.
+
+## Deferred feature: Hotspot Investigations
+
+- Do not delete the hotspot analysis capability.
+- Keep it hidden until the lifetime dataset is mature enough for recurring-place analysis to be genuinely meaningful rather than over-interpreting a short history.
+- Reassess bringing it back once there is roughly 2-3 months of good cleaned GPS history, or earlier if repeated non-home locations become clearly established across many tracked days.
+- When restored, it should focus on useful recurring-place behaviour such as repeated locations, visit frequency, timing patterns and dwell evidence, using only cleaned GPS data.
 
 ## Visual rules
 
