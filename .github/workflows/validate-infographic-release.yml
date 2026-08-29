@@ -52,12 +52,12 @@ jobs:
           launch_build=$(grep -o "const build='[^']*'" launch-20260825.html | head -1 | cut -d"'" -f2)
           test -n "$index_build"
           test "$index_build" = "$launch_build"
-          test "$index_build" = "20260829-dailytabs-overlap-profilefix-1"
+          test "$index_build" = "20260829-hangfix-1"
           grep -q "const B='20260829-gpx10-1'" gpx-live-data-20260829.js
           grep -q "export (10).gpx" gpx-live-data-20260829.js
           grep -q "NARLIA_GPX_BUILD" gpx-live-data-20260829.js
           grep -q "NARLIA_BINDINGS_BUILD" live-bindings.js
           grep -q "20260829-dailytabs-overlap-profilefix-1" infographic-toggle.js
           grep -q "20260829-overlapfix-2" infographic-layout-fix.js
-          grep -q "20260829-profilefix-1" profile-logo-fix.js
-          echo "Daily tabs, overlap guard, profile photo guard, GPX export 10 and live bindings validated: $index_build"
+          grep -q "20260829-profilefix-2" profile-logo-fix.js
+          echo "Daily tabs, overlap guard, safe profile photo guard, GPX export 10 and live bindings validated: $index_build"
