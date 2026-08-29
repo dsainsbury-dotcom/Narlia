@@ -1,6 +1,5 @@
 (()=>{
-  const BUILD='20260830-ui-fixes-2';
-  const PROFILE_SRC='media/kitten-early-01.jpg?v='+BUILD;
+  const BUILD='20260830-ui-fixes-3';
 
   function hideHotspots(){
     document.querySelectorAll('[data-page="places"]').forEach(el=>{
@@ -9,14 +8,28 @@
     });
   }
 
-  function fixProfilePhoto(){
+  async function getEmbeddedProfileSrc(){
+    try{
+      const r=await fetch('profile-logo.js?v='+BUILD,{cache:'no-store'});
+      if(!r.ok) throw new Error('profile-logo.js '+r.status);
+      const txt=await r.text();
+      const m=txt.match(/const src='(data:image\/jpeg;base64,[^']+)'/);
+      return m ? m[1] : null;
+    }catch(e){
+      console.warn('Narlia embedded profile source load failed',e);
+      return null;
+    }
+  }
+
+  function bindProfile(src){
+    if(!src) return;
     document.querySelectorAll('.logo,.petavatar').forEach(el=>{
       el.replaceChildren();
       el.style.setProperty('overflow','hidden','important');
       el.style.setProperty('padding','0','important');
       el.style.setProperty('background','none','important');
       const im=document.createElement('img');
-      im.src=PROFILE_SRC;
+      im.src=src;
       im.alt='Narlia';
       im.decoding='async';
       im.style.cssText='width:100%;height:100%;object-fit:cover;object-position:center;display:block;border-radius:50%;';
@@ -24,9 +37,10 @@
     });
   }
 
-  function apply(){
+  async function apply(){
     hideHotspots();
-    fixProfilePhoto();
+    const src=await getEmbeddedProfileSrc();
+    bindProfile(src);
     window.NARLIA_UI_FIXES_BUILD=BUILD;
   }
 
