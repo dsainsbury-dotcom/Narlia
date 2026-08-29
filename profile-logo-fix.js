@@ -1,5 +1,5 @@
 (()=>{
-  const BUILD='20260829-profilefix-1';
+  const BUILD='20260829-profilefix-2';
   async function getSrc(){
     try{
       const r=await fetch('profile-logo.js?v='+BUILD,{cache:'no-store'});
@@ -26,19 +26,17 @@
         img.alt='Narlia';
         el.appendChild(img);
       }
-      img.src=src;
+      if(img.src!==src) img.src=src;
       img.style.cssText='width:100%;height:100%;object-fit:cover;display:block;border-radius:50%;';
     });
   }
   async function install(){
     const src=await getSrc();
     if(!src)return;
-    const apply=()=>bind(src);
-    apply();
-    setTimeout(apply,100);setTimeout(apply,500);setTimeout(apply,1500);
-    const root=document.body;
-    if(root)new MutationObserver(apply).observe(root,{childList:true,subtree:true});
+    [0,100,500,1500,3000].forEach(ms=>setTimeout(()=>bind(src),ms));
+    window.addEventListener('resize',()=>bind(src),{passive:true});
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden)bind(src)});
     console.info('Narlia profile image guard',BUILD);
   }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install);else install();
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});else install();
 })();
