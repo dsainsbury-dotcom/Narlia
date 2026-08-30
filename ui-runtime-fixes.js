@@ -1,5 +1,6 @@
 (()=>{
-  const BUILD='20260830-ui-fixes-4';
+  const BUILD='20260830-ui-fixes-5';
+  const AVATAR_SOURCE='https://raw.githubusercontent.com/dsainsbury-dotcom/Narlia/3b89ec30a8276e0f50cd093c8051c9b540fcdec0/profile-logo.js';
   let profileSrc=null;
   let applying=false;
 
@@ -13,14 +14,14 @@
   async function getEmbeddedProfileSrc(){
     if(profileSrc) return profileSrc;
     try{
-      const r=await fetch('profile-logo.js?v='+BUILD,{cache:'no-store'});
-      if(!r.ok) throw new Error('profile-logo.js '+r.status);
+      const r=await fetch(AVATAR_SOURCE,{cache:'no-store'});
+      if(!r.ok) throw new Error('confirmed avatar source '+r.status);
       const txt=await r.text();
       const m=txt.match(/const src='(data:image\/jpeg;base64,[^']+)'/);
       profileSrc=m ? m[1] : null;
       return profileSrc;
     }catch(e){
-      console.warn('Narlia embedded profile source load failed',e);
+      console.warn('Narlia confirmed profile source load failed',e);
       return null;
     }
   }
@@ -36,10 +37,11 @@
       el.style.setProperty('background','none','important');
       const im=document.createElement('img');
       im.src=src;
-      im.alt='Narlia';
+      im.alt='';
+      im.setAttribute('aria-label','Narlia');
       im.decoding='async';
       im.dataset.narliaAvatar='1';
-      im.style.cssText='width:100%;height:100%;object-fit:cover;object-position:center 32%;display:block;border-radius:50%;';
+      im.style.cssText='width:100%;height:100%;object-fit:cover;object-position:center;display:block;border-radius:50%;';
       el.appendChild(im);
     });
   }
