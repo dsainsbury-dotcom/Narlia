@@ -14,7 +14,7 @@
 <script>
 (async function(){
   try {
-    const build='20260830-avatar-confirmed-10';
+    const build='20260830-avatar-exact-11';
     const urls=['dashboard-part1.b64?v='+build,'dashboard-part2.b64?v='+build];
     const parts=[];
     for(const url of urls){
@@ -34,8 +34,7 @@
     if(!txt.includes('24 Aug 2026')) throw new Error('Dashboard base date check failed');
 
     let profileSrc='';
-    const avatarSource='https://raw.githubusercontent.com/dsainsbury-dotcom/Narlia/3b89ec30a8276e0f50cd093c8051c9b540fcdec0/profile-logo.js';
-    const pr=await fetch(avatarSource,{cache:'no-store'});
+    const pr=await fetch('profile-logo.js?v='+build,{cache:'no-store'});
     if(pr.ok){
       const ptxt=await pr.text();
       const pm=ptxt.match(/const src='(data:image\/jpeg;base64,[^']+)'/);
