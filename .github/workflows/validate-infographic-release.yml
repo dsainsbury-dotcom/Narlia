@@ -8,6 +8,8 @@ on:
       - 'daily-explorer-fix.js'
       - 'gpx-live-data*.js'
       - 'live-bindings.js'
+      - 'profile-logo.js'
+      - 'ui-runtime-fixes.js'
       - 'index.html'
       - 'launch-20260825.html'
       - '.github/workflows/validate-infographic-release.yml'
@@ -22,6 +24,8 @@ jobs:
           node --check infographic-layout-fix.js
           node --check daily-explorer-fix.js
           node --check live-bindings.js
+          node --check profile-logo.js
+          node --check ui-runtime-fixes.js
           for f in gpx-live-data*.js; do node --check "$f"; done
       - name: Validate release wiring
         shell: bash
@@ -38,19 +42,21 @@ jobs:
           grep -q 'infographic-layout-fix.js' index.html
           grep -q 'daily-explorer-fix.js' index.html
           grep -q 'live-bindings.js' index.html
-          ! grep -q 'profile-logo.js' index.html
+          grep -q 'profile-logo.js' index.html
+          grep -q 'profile-logo.js' launch-20260825.html
           ! grep -q 'profile-logo-fix.js' index.html
-          grep -q 'daily-explorer-fix.js' launch-20260825.html
           ! grep -q 'profile-logo-fix.js' launch-20260825.html
+          grep -q 'daily-explorer-fix.js' launch-20260825.html
+          grep -q "data:image/jpeg;base64" profile-logo.js
+          grep -q "querySelectorAll('.logo,.petavatar')" profile-logo.js
           index_build=$(grep -o "const build='[^']*'" index.html | head -1 | cut -d"'" -f2)
           launch_build=$(grep -o "const build='[^']*'" launch-20260825.html | head -1 | cut -d"'" -f2)
           test -n "$index_build"
           test "$index_build" = "$launch_build"
-          test "$index_build" = "20260830-uirestore-dailyfix-1"
           grep -q "const B='20260829-gpx10-1'" gpx-live-data-20260829.js
           grep -q "export (10).gpx" gpx-live-data-20260829.js
           grep -q "NARLIA_GPX_BUILD" gpx-live-data-20260829.js
           grep -q "NARLIA_DAILY_EXPLORER_LATEST" daily-explorer-fix.js
           grep -q "DATA.days\[DATA.days.length-1\]" daily-explorer-fix.js
           grep -q "NARLIA_BINDINGS_BUILD" live-bindings.js
-          echo "UI restore, Daily Explorer latest-day fix, daily tabs, overlap guard and GPX export 10 validated: $index_build"
+          echo "Current dashboard wiring, avatar, Daily Explorer latest-day fix and GPX export 10 validated: $index_build"
