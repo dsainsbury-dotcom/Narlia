@@ -14,7 +14,7 @@
 <script>
 (async function(){
   try {
-    const build='20260830-avatarpersist-8';
+    const build='20260830-avatarjpeg-9';
     const urls=['dashboard-part1.b64?v='+build,'dashboard-part2.b64?v='+build];
     const parts=[];
     for(const url of urls){
@@ -40,7 +40,7 @@
       const pm=ptxt.match(/const src='(data:image\/jpeg;base64,[^']+)'/);
       if(pm) profileSrc=pm[1];
     }
-    const avatarScript=profileSrc ? `<script>(function(){const src=${JSON.stringify(profileSrc)};function a(){document.querySelectorAll('.logo,.petavatar').forEach(el=>{el.replaceChildren();el.style.setProperty('overflow','hidden','important');el.style.setProperty('padding','0','important');el.style.setProperty('background','none','important');const im=document.createElement('img');im.src=src;im.alt='Narlia';im.style.cssText='width:100%;height:100%;object-fit:cover;object-position:center 32%;display:block;border-radius:50%';el.appendChild(im);});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',a);else a();[100,400,1000,2500].forEach(ms=>setTimeout(a,ms));})();<\/script>` : '';
+    const avatarScript=profileSrc ? `<script>(function(){const src=${JSON.stringify(profileSrc)};function a(){document.querySelectorAll('.logo,.petavatar').forEach(el=>{el.replaceChildren();el.style.setProperty('overflow','hidden','important');el.style.setProperty('padding','0','important');el.style.setProperty('background','none','important');const im=document.createElement('img');im.src=src;im.alt='';im.setAttribute('aria-label','Narlia');im.style.cssText='width:100%;height:100%;object-fit:cover;object-position:center;display:block;border-radius:50%';el.appendChild(im);});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',a);else a();[100,400,1000,2500].forEach(ms=>setTimeout(a,ms));})();<\/script>` : '';
 
     txt=txt.replace('</body>','<script src="dante-photo-data.js?v='+build+'"><\/script><script src="journey-patch.js?v='+build+'"><\/script><script src="gpx-live-data.js?v='+build+'"><\/script><script src="gpx-live-data-20260827.js?v='+build+'"><\/script><script src="gpx-live-data-20260828.js?v='+build+'"><\/script><script src="gpx-live-data-20260829.js?v='+build+'"><\/script><script src="infographic-toggle.js?v='+build+'"><\/script><script src="infographic-layout-fix.js?v='+build+'"><\/script>'+avatarScript+'<script src="ui-runtime-fixes.js?v='+build+'"><\/script><script src="daily-explorer-fix.js?v='+build+'"><\/script><script src="live-bindings.js?v='+build+'"><\/script></body>');
     document.open();
