@@ -8,7 +8,7 @@ on:
       - 'daily-explorer-fix.js'
       - 'gpx-live-data*.js'
       - 'live-bindings.js'
-      - 'profile-logo.js'
+      - 'narlia-avatar-approved.js'
       - 'ui-runtime-fixes.js'
       - 'index.html'
       - 'launch-20260825.html'
@@ -24,7 +24,7 @@ jobs:
           node --check infographic-layout-fix.js
           node --check daily-explorer-fix.js
           node --check live-bindings.js
-          node --check profile-logo.js
+          node --check narlia-avatar-approved.js
           node --check ui-runtime-fixes.js
           for f in gpx-live-data*.js; do node --check "$f"; done
       - name: Validate release wiring
@@ -34,23 +34,26 @@ jobs:
           grep -Fq 'Recent (7 Days)' infographic-toggle.js
           grep -Fq 'All Time' infographic-toggle.js
           grep -Fq 'gpx-live-data.js' index.html
-          grep -Fq 'gpx-live-data-20260827.js' index.html
-          grep -Fq 'gpx-live-data-20260828.js' index.html
-          grep -Fq 'gpx-live-data-20260829.js' index.html
           grep -Fq 'infographic-toggle.js' index.html
           grep -Fq 'infographic-layout-fix.js' index.html
           grep -Fq 'daily-explorer-fix.js' index.html
           grep -Fq 'live-bindings.js' index.html
-          grep -Fq 'profile-logo.js' index.html
-          grep -Fq 'profile-logo.js' launch-20260825.html
-          ! grep -Fq 'profile-logo-fix.js' index.html
-          ! grep -Fq 'profile-logo-fix.js' launch-20260825.html
-          grep -Fq 'data:image/jpeg;base64' profile-logo.js
-          grep -Fq "querySelectorAll('.logo,.petavatar')" profile-logo.js
+          grep -Fq 'narlia-avatar-approved.js' index.html
+          grep -Fq 'narlia-avatar-approved.js' launch-20260825.html
+          grep -Fq 'data:image/jpeg;base64' narlia-avatar-approved.js
+          grep -Fq "querySelectorAll('.logo,.petavatar')" narlia-avatar-approved.js
           grep -Fq 'NARLIA_DAILY_EXPLORER_LATEST' daily-explorer-fix.js
           grep -Fq 'NARLIA_BINDINGS_BUILD' live-bindings.js
+
+          # Every GPX data script wired into the main launcher must exist and parse.
+          grep -o 'gpx-live-data[^"?]*\.js' index.html | sort -u | while read -r f; do
+            test -f "$f"
+            node --check "$f"
+            grep -Fq "$f" launch-20260825.html
+          done
+
           index_build=$(grep -o "const build='[^']*'" index.html | head -1 | cut -d"'" -f2)
           launch_build=$(grep -o "const build='[^']*'" launch-20260825.html | head -1 | cut -d"'" -f2)
           test -n "$index_build"
           test "$index_build" = "$launch_build"
-          echo "Current dashboard wiring and avatar validated: $index_build"
+          echo "Current dashboard wiring and approved avatar validated: $index_build"
