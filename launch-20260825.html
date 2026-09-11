@@ -14,7 +14,7 @@
 <script>
 (async function(){
   try {
-    const build='20260911-testday-18';
+    const build='20260911-testday-19';
     const urls=['dashboard-part1.b64?v='+build,'dashboard-part2.b64?v='+build];
     const parts=[];
     for(const url of urls){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error('Could not load '+url+' ('+r.status+')');const part=(await r.text()).trim();if(!part)throw new Error(url+' is empty');parts.push(part);}
