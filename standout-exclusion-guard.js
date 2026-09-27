@@ -1,31 +1,9 @@
 (()=>{
-  const EXCLUDED=new Set(['2026-08-13']);
-  const eligible=d=>d&&!EXCLUDED.has(d.date);
-  const num=(d,k)=>Number(d?.[k]||0);
-  function bestNormal(){const ds=(window.DATA?.days||[]).filter(eligible);return ds.length?ds.reduce((a,b)=>num(b,'distance_km')>num(a,'distance_km')?b:a,ds[0]):null;}
-  function fix(){
-    if(!window.DATA)return;
-    const best=bestNormal();if(!best)return;
-    DATA.behaviour_exclusions=[...EXCLUDED];
-    if(DATA.most_distance?.date&&EXCLUDED.has(DATA.most_distance.date))DATA.most_distance=best;
-    DATA.standout_dates=(DATA.standout_dates||[]).filter(d=>!EXCLUDED.has(d));
-    if(!DATA.standout_dates.includes(best.date))DATA.standout_dates.unshift(best.date);
-    const cards=[...document.querySelectorAll('#infographic .tele-card, #infographic .card')];
-    cards.forEach(card=>{
-      const title=card.querySelector('.tele-title,.kicker')?.textContent.trim().toUpperCase();
-      if(title!=='STANDOUT DAY')return;
-      const big=card.querySelector('.story-big,.value,h2,h3');if(big)big.textContent=best.label||best.date;
-      card.querySelectorAll('.tele-row,.recordline').forEach(r=>{
-        const label=r.querySelector('span')?.textContent.trim().toLowerCase();const val=r.querySelector('b');if(!val)return;
-        if(label==='distance')val.textContent=`${num(best,'distance_km').toFixed(2)} km`;
-        if(label==='max from home'||label==='max range')val.textContent=`${num(best,'max_range_m')||num(best,'max_core_m')} m`;
-      });
-      card.dataset.standoutDate=best.date;
-      const btn=card.querySelector('button,a');if(btn){btn.onclick=e=>{e.preventDefault();try{showPage('daily')}catch(_){}setTimeout(()=>{const sel=document.querySelector('#daily select, #daySelect');if(sel){sel.value=best.date;sel.dispatchEvent(new Event('change',{bubbles:true}))}},50);};}
-    });
-    window.NARLIA_STANDOUT_GUARD_BUILD='20260927-1';
-  }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fix);else fix();
-  [50,150,400,900,1800,3500].forEach(ms=>setTimeout(fix,ms));
-  new MutationObserver(()=>setTimeout(fix,0)).observe(document.documentElement,{childList:true,subtree:true});
+const X='2026-08-13';
+const best=()=>{const a=(window.DATA?.days||[]).filter(d=>d.date!==X);return a.length?a.reduce((p,c)=>Number(c.distance_km||0)>Number(p.distance_km||0)?c:p,a[0]):null};
+function card(){const root=document.getElementById('infographic');if(!root)return null;const title=[...root.querySelectorAll('*')].find(e=>e.children.length===0&&e.textContent.trim().toUpperCase()==='STANDOUT DAY');if(!title)return null;let n=title.parentElement;while(n&&n!==root){const t=n.textContent||'';if(/View on Map/i.test(t)&&/Distance/i.test(t)&&/Max from home/i.test(t))return n;n=n.parentElement}return title.parentElement}
+function leafReplace(root,test,value){for(const e of root.querySelectorAll('*'))if(e.children.length===0&&test(e.textContent.trim())){if(e.textContent!==value)e.textContent=value;return e}return null}
+function fix(){if(!window.DATA)return;const b=best();if(!b)return;DATA.behaviour_exclusions=[X];DATA.most_distance=b;DATA.standout_dates=(DATA.standout_dates||[]).filter(d=>d!==X);if(!DATA.standout_dates.includes(b.date))DATA.standout_dates.unshift(b.date);const c=card();if(!c)return;leafReplace(c,t=>/^Thu\s+13\s+Aug(?:\s+2026)?$/i.test(t),b.label||b.date);let rows=[...c.querySelectorAll('*')].filter(e=>e.children.length===0);for(const lab of rows){const s=lab.textContent.trim().toLowerCase();if(s==='distance'||s==='max from home'){const parent=lab.parentElement;if(!parent)continue;const vals=[...parent.querySelectorAll('*')].filter(e=>e.children.length===0&&e!==lab);const v=vals.find(e=>/^[\d.]+\s*(km|m)$/i.test(e.textContent.trim()));if(v)v.textContent=s==='distance'?`${Number(b.distance_km||0).toFixed(2)} km`:`${Number(b.max_range_m||b.max_core_m||0)} m`}}
+const btn=[...c.querySelectorAll('a,button')].find(e=>/View on Map/i.test(e.textContent));if(btn){btn.onclick=e=>{e.preventDefault();try{showPage('daily')}catch(_){}setTimeout(()=>{const sel=document.querySelector('#daily select,#daySelect');if(sel){sel.value=b.date;sel.dispatchEvent(new Event('change',{bubbles:true}))}},80)}}c.dataset.standoutDate=b.date;window.NARLIA_STANDOUT_GUARD_BUILD='20260927-domfix-4'}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fix);else fix();[50,150,400,900,1800,3500,7000].forEach(ms=>setTimeout(fix,ms));setInterval(fix,3000);
 })();
