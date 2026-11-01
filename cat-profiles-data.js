@@ -38,7 +38,7 @@ window.NARLIA_CAT_PROFILES={
         "originalFilename": "IMG_2452.jpeg"
       },
       {
-        "src": "media/narlia-2025-04-23-1600.jpeg",
+        "src": "media/narlia-2025-04-23-1600.jpeg?v=20261101-narlia-photo-repair-1",
         "caption": "Narlia curled up beside her friend · 23 April 2025",
         "capturedAt": "2025-04-23",
         "source": "User supplied",
@@ -46,7 +46,7 @@ window.NARLIA_CAT_PROFILES={
         "originalFilename": "IMG_1600.jpeg"
       },
       {
-        "src": "media/narlia-2025-04-23-1599.jpeg",
+        "src": "media/narlia-2025-04-23-1599.jpeg?v=20261101-narlia-photo-repair-1",
         "caption": "Narlia napping beside her friend · 23 April 2025",
         "capturedAt": "2025-04-23",
         "source": "User supplied",
@@ -54,7 +54,7 @@ window.NARLIA_CAT_PROFILES={
         "originalFilename": "IMG_1599.jpeg"
       },
       {
-        "src": "media/narlia-2025-04-23-1598.jpeg",
+        "src": "media/narlia-2025-04-23-1598.jpeg?v=20261101-narlia-photo-repair-1",
         "caption": "Narlia asleep by the window · 23 April 2025",
         "capturedAt": "2025-04-23",
         "source": "User supplied",
@@ -62,7 +62,7 @@ window.NARLIA_CAT_PROFILES={
         "originalFilename": "IMG_1598.jpeg"
       },
       {
-        "src": "media/narlia-2025-04-23-1596.jpeg",
+        "src": "media/narlia-2025-04-23-1596.jpeg?v=20261101-narlia-photo-repair-1",
         "caption": "Narlia tucked into a blanket · 23 April 2025",
         "capturedAt": "2025-04-23",
         "source": "User supplied",
@@ -70,7 +70,7 @@ window.NARLIA_CAT_PROFILES={
         "originalFilename": "IMG_1596.jpeg"
       },
       {
-        "src": "media/narlia-2025-04-16-1540.jpeg",
+        "src": "media/narlia-2025-04-16-1540.jpeg?v=20261101-narlia-photo-repair-1",
         "caption": "Narlia curled up in the garden planter · 16 April 2025",
         "capturedAt": "2025-04-16",
         "source": "User supplied",
@@ -78,7 +78,7 @@ window.NARLIA_CAT_PROFILES={
         "originalFilename": "IMG_1540.jpeg"
       },
       {
-        "src": "media/narlia-2025-04-16-1539.jpeg",
+        "src": "media/narlia-2025-04-16-1539.jpeg?v=20261101-narlia-photo-repair-1",
         "caption": "Narlia snoozing in her planter · 16 April 2025",
         "capturedAt": "2025-04-16",
         "source": "User supplied",
@@ -86,7 +86,7 @@ window.NARLIA_CAT_PROFILES={
         "originalFilename": "IMG_1539.jpeg"
       },
       {
-        "src": "media/narlia-2025-04-12-1496.jpeg",
+        "src": "media/narlia-2025-04-12-1496.jpeg?v=20261101-narlia-photo-repair-1",
         "caption": "Narlia beside the scratching post · 12 April 2025",
         "capturedAt": "2025-04-12",
         "source": "User supplied",
@@ -110,7 +110,7 @@ window.NARLIA_CAT_PROFILES={
         "originalFilename": "IMG_0331.jpeg"
       },
       {
-        "src": "media/narlia-2025-03-20-0274.jpeg",
+        "src": "media/narlia-2025-03-20-0274.jpeg?v=20261101-narlia-photo-repair-1",
         "caption": "Narlia exploring the tree · 20 March 2025",
         "capturedAt": "2025-03-20",
         "source": "User supplied",
