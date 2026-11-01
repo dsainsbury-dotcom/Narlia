@@ -11,3 +11,6 @@ Any new cat-related input triggers a site update and publish. This includes GPX 
 - A media failure must never take down the GPS dashboard.
 - Every cat-related entry triggers a rebuild/update/publish of the site, even when the entry is only a note or correction.
 - Never say updated/published/done until the GitHub write is successful and the resulting repository/public site has been checked.
+
+- Kitten weights: keep each cat's measurements separate; never invent a weighing date or calculate a trend from a single undated value. Record the date when supplied, preserve past readings and update the relevant profile page.
+- Dante and Amara profiles: birth date 23 July 2026, joined 29 October 2026. Update `cat-profiles-data.js` when confirmed details change.

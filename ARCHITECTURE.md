@@ -121,3 +121,11 @@ Repository workflows validate runtime wiring and JavaScript syntax. Stable backu
 ## Refactoring principle
 
 Do not rewrite the whole app during routine updates. Keep data updates isolated from presentation changes. Structural refactors should begin from a known stable tag/branch and should be validated before replacing production.
+
+## Our Cats profiles (1 November 2026)
+
+- `cat-profiles-data.js` stores Narlia, Dante and Amara identities and confirmed metadata.
+- `cat-profiles.js` adds the Our Cats overview and separate Dante and Amara profile pages without changing the approved Narlia telemetry layout.
+- Dante and Amara were born 23 July 2026 and joined the household 29 October 2026. Their last reported weights are 1.7 kg and 1.6 kg respectively; measurement dates are unknown, so no growth trend is inferred.
+- Only Narlia has GPS data (tracker IAJVTCCE). No kitten GPS points are included in her totals.
+- Future dated weight measurements should be added per cat, preserving history. Use separate tracker identities if Dante or Amara start GPS tracking.

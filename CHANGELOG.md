@@ -1,3 +1,10 @@
+## 1 November 2026 - GPX refresh and Dante/Amara pages
+
+- Merged Narlia's 19 October to 1 November GPX export, deduplicating timestamps and excluding two isolated implausible GPS spikes.
+- Refreshed lifetime, last-30-day, daily, records, trends and rolling 7-day infographic data through 1 November 2026.
+- Added Our Cats navigation and separate Dante and Amara pages, confirmed birth/arrival dates and last-reported undated weights.
+- Preserved Narlia's tracker identity, approved infographic and existing Journey content.
+
 # Narlia's World - Changelog
 
 This changelog records significant product/data/reliability changes. Git commit history remains the detailed audit trail.
