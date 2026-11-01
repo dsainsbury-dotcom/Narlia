@@ -159,3 +159,9 @@ Do not rewrite the whole app during routine updates. Keep data updates isolated 
 - Ten Auto Photos images were imported as stable webp files under `media/auto-<image_id>.webp`, avoiding expiring Auto CDN URLs. Original Auto image IDs and capture dates are saved in each gallery entry for deduplication.
 - Group shots with other littermates are described as such. Images with no reliable identification were not added.
 - A visible `View N photos` button scrolls to each profile's gallery.
+
+### Narlia's photo profile (1 November 2026)
+
+- The Our Cats overview now shows a photo for Narlia, and its `View Narlia` button opens her own photo profile (`#narlia-profile`). A separate button opens the existing GPS infographic, preserving every established GPS dashboard tab and control.
+- First photo candidate: Auto Photos image `jiFhNlNijjb99NaVi5GFm`, taken 13 September 2026, showing an adult grey tabby with white paws on a window perch. User identified Narlia as the tabby; this is the only clear real tabby photo found in the current synced library search. Confirmation can be requested if needed.
+- Imported as stable `media/auto-jiFhNlNijjb99NaVi5GFm.webp` and referenced in `cat-profiles-data.js` with original Auto image ID for future deduplication. Narlia's original approved dashboard avatar is unchanged.

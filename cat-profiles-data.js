@@ -3,7 +3,18 @@ window.NARLIA_CAT_PROFILES={
   "narlia": {
     "name": "Narlia",
     "tracker": "IAJVTCCE",
-    "gps": true
+    "gps": true,
+    "photo": "media/auto-jiFhNlNijjb99NaVi5GFm.webp",
+    "gallery": [
+      {
+        "src": "media/auto-jiFhNlNijjb99NaVi5GFm.webp",
+        "caption": "Tabby cat on a window perch · 13 September 2026",
+        "capturedAt": "2026-09-13",
+        "source": "Auto Photos",
+        "autoId": "jiFhNlNijjb99NaVi5GFm",
+        "shared": false
+      }
+    ]
   },
   "dante": {
     "name": "Dante",

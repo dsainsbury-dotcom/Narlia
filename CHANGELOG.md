@@ -1,3 +1,9 @@
+## 1 November 2026 - Narlia photo profile
+
+- Checked Auto Photos for the adult tabby Narlia. Found one plausible genuine tabby photo (13 September, window perch), excluding screenshots, product adverts and kitten photos.
+- Added a separate Narlia photo profile accessible through Our Cats, with a link back to her full GPS dashboard. Kept her approved GPS avatar, data, six dashboard sections and controls intact.
+- Added one stable Auto photo asset with its original image ID for future duplicate checking.
+
 ## 1 November 2026 - Auto Photos galleries populated
 
 - Imported ten confirmed Auto Photos pictures as permanent GitHub media assets.
