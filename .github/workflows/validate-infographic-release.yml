@@ -10,6 +10,8 @@ on:
       - 'live-bindings.js'
       - 'narlia-avatar-approved.js'
       - 'ui-runtime-fixes.js'
+      - 'cat-gps-directory.js'
+      - 'cat-gps-data.js'
       - 'index.html'
       - 'launch-20260825.html'
       - '.github/workflows/validate-infographic-release.yml'
@@ -28,6 +30,9 @@ jobs:
           node --check ui-runtime-fixes.js
           node --check cat-profiles-data.js
           node --check cat-profiles.js
+          node --check cat-gps-directory.js
+          node --check cat-gps-data.js
+          cmp index.html launch-20260825.html
           test -s media/auto-qIR9uBVa-F61gq-T_ySFK.webp
           test -s media/auto-K0gk8TsGuybltR6vWc1lr.webp
           grep -Fq 'data-scroll-gallery' cat-profiles.js
