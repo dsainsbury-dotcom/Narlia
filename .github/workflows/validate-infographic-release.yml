@@ -28,6 +28,10 @@ jobs:
           node --check ui-runtime-fixes.js
           node --check cat-profiles-data.js
           node --check cat-profiles.js
+          test -s media/auto-qIR9uBVa-F61gq-T_ySFK.webp
+          test -s media/auto-K0gk8TsGuybltR6vWc1lr.webp
+          grep -Fq 'data-scroll-gallery' cat-profiles.js
+          grep -Fq 'autoId' cat-profiles-data.js
           test -s media/amara-portrait-20261101.webp
           test -s media/dante-portrait-20261101.webp
           for f in gpx-live-data*.js; do node --check "$f"; done

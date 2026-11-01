@@ -151,3 +151,11 @@ Do not rewrite the whole app during routine updates. Keep data updates isolated 
 - User confirmed 1 November 2026: Dante wore **red** collar before coming home, and now wears **blue**.
 - Amara wore **orange** collar before coming home, and now wears **pink**.
 - When sorting the Auto Photos album, use these dated collar mappings; pictures with other kittens still require verification.
+
+### Auto Photos gallery release (1 November 2026)
+
+- Dante gallery: 10 photos, including confirmed red-collar solo pictures, shared photos of Dante and Amara, one home portrait and an earlier shared photo with mum.
+- Amara gallery: 9 photos, including confirmed orange-collar solo pictures, shared photos of Dante and Amara, one home portrait and an earlier shared photo with mum.
+- Ten Auto Photos images were imported as stable webp files under `media/auto-<image_id>.webp`, avoiding expiring Auto CDN URLs. Original Auto image IDs and capture dates are saved in each gallery entry for deduplication.
+- Group shots with other littermates are described as such. Images with no reliable identification were not added.
+- A visible `View N photos` button scrolls to each profile's gallery.

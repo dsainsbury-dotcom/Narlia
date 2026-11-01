@@ -24,3 +24,5 @@ Any new cat-related input triggers a site update and publish. This includes GPX 
 - New Auto Photos uploads do not automatically appear on GitHub Pages; only promise regular checks/updates when a real scheduled workflow has been configured.
 
 - User-confirmed identity key: Dante red collar in breeder-era photos, blue collar after adoption; Amara orange collar before adoption, pink collar after adoption. Do not infer that all cats in group photos are one of the two kittens.
+
+- For future Auto album updates, deduplicate using each gallery item's `autoId`. Fetch photo bytes and publish stable assets in `media/` rather than embedding expiring Auto Photos signed URLs. Put shared confirmed Dante+Amara pictures in both galleries, and update the photo counts.

@@ -1,3 +1,10 @@
+## 1 November 2026 - Auto Photos galleries populated
+
+- Imported ten confirmed Auto Photos pictures as permanent GitHub media assets.
+- Dante profile now lists 10 photos and Amara 9, with shared photos appearing in both.
+- Added prominent 'View photos' buttons and a count above each gallery.
+- Retained Narlia's GPS and dashboard controls unchanged.
+
 ## 1 November 2026 - Confirmed collar identities
 
 - Dante: red collar before adoption, blue collar now. Amara: orange collar before adoption, pink collar now. Saved identity mappings for future Auto Photos sorting.
