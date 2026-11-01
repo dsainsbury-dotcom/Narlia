@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const build='20261101-multicat-gps-directory-1',cats=window.NARLIA_CAT_PROFILES,gps=window.CAT_GPS_DATA;
+const build='20261101-gps-nav-fix-2',cats=window.NARLIA_CAT_PROFILES,gps=window.CAT_GPS_DATA;
 if(!cats||!gps)return;
 const views=[
  ['infographic','Infographic','Recent and all-time GPS activity will appear here after tracking starts.'],
@@ -30,7 +30,7 @@ const css=[
 '.gps-empty strong{font-size:20px}.gps-empty p{color:var(--muted);line-height:1.6;margin:0}',
 '.gps-narlia-banner{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 14px;padding:11px 14px;background:#0f2536;border:1px solid #294158;border-radius:10px}',
 '.gps-narlia-banner span{color:#b8d7e9;font-size:13px}',
-'.gps-nav-label{align-self:center;color:#82badc;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:800;padding:0 4px}',
+'.gps-nav-label{display:none}',
 '.gps-profile-action{margin:8px 8px 10px 0}',
 '@media(max-width:640px){.gps-directory-grid{grid-template-columns:1fr}.gps-cat-card img{height:220px}}'
 ].join('');
@@ -76,7 +76,7 @@ function init(){
  const gpsTab=document.createElement('button');gpsTab.className='tab';gpsTab.dataset.page='gps-directory';gpsTab.textContent='GPS Directory';gpsTab.onclick=()=>navGo('gps-directory');
  if(our){nav.insertBefore(our,nav.firstElementChild);nav.insertBefore(gpsTab,our.nextSibling);}else nav.insertBefore(gpsTab,first);
  if(watch)nav.insertBefore(watch,gpsTab.nextSibling);
- const label=document.createElement('span');label.className='gps-nav-label';label.textContent='Narlia GPS ↓';nav.insertBefore(label,first);
+ const narliaTab=document.createElement('button');narliaTab.type='button';narliaTab.className='tab';narliaTab.dataset.page='infographic';narliaTab.textContent='Narlia GPS';narliaTab.setAttribute('aria-label','Open Narlia GPS infographic');narliaTab.onclick=()=>navGo('infographic');nav.insertBefore(narliaTab,first);
  ['infographic','story','last30','day','places','records','trends'].forEach(id=>{
   const p=document.getElementById(id);if(!p)return;
   p.prepend(node('<div class="gps-narlia-banner"><span><strong>Narlia’s GPS</strong> · Tracker IAJVTCCE · These statistics belong to Narlia only.</span>'+button('Switch cat','data-gps-go="gps-directory"',true)+'</div>'));
