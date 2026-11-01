@@ -20,6 +20,102 @@ window.NARLIA_CAT_PROFILES={
         "source": "Auto Photos",
         "autoId": "jiFhNlNijjb99NaVi5GFm",
         "shared": false
+      },
+      {
+        "src": "media/narlia-2025-10-19-2453.jpeg",
+        "caption": "Narlia dozing on the bed · 19 October 2025",
+        "capturedAt": "2025-10-19",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_2453.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-10-19-2452.jpeg",
+        "caption": "Narlia stretched out on the bed · 19 October 2025",
+        "capturedAt": "2025-10-19",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_2452.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-04-23-1600.jpeg",
+        "caption": "Narlia curled up beside her friend · 23 April 2025",
+        "capturedAt": "2025-04-23",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_1600.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-04-23-1599.jpeg",
+        "caption": "Narlia napping beside her friend · 23 April 2025",
+        "capturedAt": "2025-04-23",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_1599.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-04-23-1598.jpeg",
+        "caption": "Narlia asleep by the window · 23 April 2025",
+        "capturedAt": "2025-04-23",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_1598.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-04-23-1596.jpeg",
+        "caption": "Narlia tucked into a blanket · 23 April 2025",
+        "capturedAt": "2025-04-23",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_1596.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-04-16-1540.jpeg",
+        "caption": "Narlia curled up in the garden planter · 16 April 2025",
+        "capturedAt": "2025-04-16",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_1540.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-04-16-1539.jpeg",
+        "caption": "Narlia snoozing in her planter · 16 April 2025",
+        "capturedAt": "2025-04-16",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_1539.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-04-12-1496.jpeg",
+        "caption": "Narlia beside the scratching post · 12 April 2025",
+        "capturedAt": "2025-04-12",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_1496.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-04-06-1478.jpeg",
+        "caption": "Narlia resting on the garden wall · 6 April 2025",
+        "capturedAt": "2025-04-06",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_1478.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-03-26-0331.jpeg",
+        "caption": "Narlia looking down from above · 26 March 2025",
+        "capturedAt": "2025-03-26",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_0331.jpeg"
+      },
+      {
+        "src": "media/narlia-2025-03-20-0274.jpeg",
+        "caption": "Narlia exploring the tree · 20 March 2025",
+        "capturedAt": "2025-03-20",
+        "source": "User supplied",
+        "shared": false,
+        "originalFilename": "IMG_0274.jpeg"
       }
     ]
   },
