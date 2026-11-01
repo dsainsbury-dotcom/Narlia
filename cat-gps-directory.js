@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const build='20261101-shared-cat-gps-1',cats=window.NARLIA_CAT_PROFILES,gps=window.CAT_GPS_DATA;
+const build='20261101-shared-cat-gps-2',cats=window.NARLIA_CAT_PROFILES,gps=window.CAT_GPS_DATA;
 const ids=['narlia','dante','amara'];
 const views=[
  ['infographic','Infographic','Recent and all-time activity will appear here after tracking starts.'],
@@ -20,6 +20,18 @@ function init(){
  const nav=document.querySelector('nav'),main=document.querySelector('main');
  if(!nav||!main||typeof window.showPage!=='function')return;
  const original=window.showPage;
+ // Leaflet heat redraws can arrive after a cat switch hides their map.
+ // Wait for the existing map invalidation on return instead of drawing a zero-size canvas.
+ const heat=window.L?.HeatLayer?.prototype;
+ if(heat&&!heat._catVisibilityGuard){
+  const redraw=heat._redraw;
+  heat._redraw=function(){
+   const container=this._map?.getContainer();
+   if(!container?.clientWidth||!container?.clientHeight||!this._canvas?.width||!this._canvas?.height){this._frame=null;return this;}
+   return redraw.apply(this,arguments);
+  };
+  heat._catVisibilityGuard=true;
+ }
  const style=el('style');style.textContent=`
  #cat-gps-navigation{max-width:1450px;box-sizing:border-box;padding:20px 22px 0;margin:0 0 20px}
  .gps-selectors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:10px 0 18px}
