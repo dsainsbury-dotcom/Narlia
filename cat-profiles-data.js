@@ -40,6 +40,22 @@ window.NARLIA_CAT_PROFILES={
         "shared": false
       },
       {
+        "src": "media/auto-JO03fu17jaTahHKeUvix_.webp",
+        "caption": "Dante wearing his blue collar · 1 November 2026",
+        "capturedAt": "2026-11-01",
+        "source": "Auto Photos",
+        "autoId": "JO03fu17jaTahHKeUvix_",
+        "shared": false
+      },
+      {
+        "src": "media/auto-W_31BJqo086wf94YMdpTm.webp",
+        "caption": "Dante with his blue collar · 30 October 2026",
+        "capturedAt": "2026-10-30",
+        "source": "Auto Photos",
+        "autoId": "W_31BJqo086wf94YMdpTm",
+        "shared": false
+      },
+      {
         "src": "media/auto-qIR9uBVa-F61gq-T_ySFK.webp",
         "caption": "Dante relaxing on his hammock · red collar",
         "capturedAt": "2026-10-11",
@@ -107,22 +123,6 @@ window.NARLIA_CAT_PROFILES={
         "src": "media/2026-08-25-amara-dante-with-mum.webp",
         "caption": "Dante and Amara with mum · 25 August 2026",
         "shared": true
-      },
-      {
-        "src": "media/auto-JO03fu17jaTahHKeUvix_.webp",
-        "caption": "Dante wearing his blue collar · 1 November 2026",
-        "capturedAt": "2026-11-01",
-        "source": "Auto Photos",
-        "autoId": "JO03fu17jaTahHKeUvix_",
-        "shared": false
-      },
-      {
-        "src": "media/auto-W_31BJqo086wf94YMdpTm.webp",
-        "caption": "Dante with his blue collar · 30 October 2026",
-        "capturedAt": "2026-10-30",
-        "source": "Auto Photos",
-        "autoId": "W_31BJqo086wf94YMdpTm",
-        "shared": false
       }
     ]
   },
@@ -148,6 +148,22 @@ window.NARLIA_CAT_PROFILES={
       {
         "src": "media/amara-portrait-20261101.webp",
         "caption": "Amara at home",
+        "shared": false
+      },
+      {
+        "src": "media/auto-t71eZvLeTZjXYU8xFRcDZ.webp",
+        "caption": "Amara wearing her pink collar · 31 October 2026",
+        "capturedAt": "2026-10-31",
+        "source": "Auto Photos",
+        "autoId": "t71eZvLeTZjXYU8xFRcDZ",
+        "shared": false
+      },
+      {
+        "src": "media/auto-jzLjt7HPfIJnLeFqoiatJ.webp",
+        "caption": "Amara with her pink collar · 30 October 2026",
+        "capturedAt": "2026-10-30",
+        "source": "Auto Photos",
+        "autoId": "jzLjt7HPfIJnLeFqoiatJ",
         "shared": false
       },
       {
@@ -210,22 +226,6 @@ window.NARLIA_CAT_PROFILES={
         "src": "media/2026-08-25-amara-dante-with-mum.webp",
         "caption": "Dante and Amara with mum · 25 August 2026",
         "shared": true
-      },
-      {
-        "src": "media/auto-t71eZvLeTZjXYU8xFRcDZ.webp",
-        "caption": "Amara wearing her pink collar · 31 October 2026",
-        "capturedAt": "2026-10-31",
-        "source": "Auto Photos",
-        "autoId": "t71eZvLeTZjXYU8xFRcDZ",
-        "shared": false
-      },
-      {
-        "src": "media/auto-jzLjt7HPfIJnLeFqoiatJ.webp",
-        "caption": "Amara with her pink collar · 30 October 2026",
-        "capturedAt": "2026-10-30",
-        "source": "Auto Photos",
-        "autoId": "jzLjt7HPfIJnLeFqoiatJ",
-        "shared": false
       }
     ]
   },
