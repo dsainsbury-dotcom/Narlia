@@ -145,3 +145,9 @@ Do not rewrite the whole app during routine updates. Keep data updates isolated 
 - Current kitten galleries are separate per kitten and include each supplied portrait plus the existing verified shared photo with mum from 25 August 2026. The `gallery` arrays in `cat-profiles-data.js` can be expanded as new images are approved.
 - Both kitten weights were taken on Tuesday 27 October 2026 at second vaccinations: Dante 1.70 kg; Amara 1.60 kg. They are dated observations, not proof of a growth trend.
 - Auto Photos album images are not live-linked to the static GitHub Pages site. Future photo additions require fetching and publishing approved images. Do not claim unattended automatic updates without an actual scheduled workflow.
+
+### Confirmed kitten collar identification
+
+- User confirmed 1 November 2026: Dante wore **red** collar before coming home, and now wears **blue**.
+- Amara wore **orange** collar before coming home, and now wears **pink**.
+- When sorting the Auto Photos album, use these dated collar mappings; pictures with other kittens still require verification.

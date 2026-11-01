@@ -22,3 +22,5 @@ Any new cat-related input triggers a site update and publish. This includes GPX 
 - Photo albums: source is Auto Photos album `Dante and Amara` (`wE4DN-4klDuEIpI6RXJWC`). Place photos of a single confirmed kitten in that kitten's gallery; place shared photos in both galleries. Ask for identification if unclear, particularly for red/orange collars in older litter photos. Do not publish pictures of other kittens as Dante/Amara.
 - Update weightDate and weights[] with the measurement date, never the screenshot upload date. Baseline: both measured 2026-10-27 at their second jabs.
 - New Auto Photos uploads do not automatically appear on GitHub Pages; only promise regular checks/updates when a real scheduled workflow has been configured.
+
+- User-confirmed identity key: Dante red collar in breeder-era photos, blue collar after adoption; Amara orange collar before adoption, pink collar after adoption. Do not infer that all cats in group photos are one of the two kittens.

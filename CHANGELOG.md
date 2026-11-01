@@ -1,3 +1,7 @@
+## 1 November 2026 - Confirmed collar identities
+
+- Dante: red collar before adoption, blue collar now. Amara: orange collar before adoption, pink collar now. Saved identity mappings for future Auto Photos sorting.
+
 ## 1 November 2026 - Dated kitten weights and photo galleries
 
 - Confirmed Auto Photos album `Dante and Amara` (12 photos at inspection), with older littermate images pending identity confirmation.
