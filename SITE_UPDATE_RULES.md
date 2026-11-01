@@ -14,3 +14,7 @@ Any new cat-related input triggers a site update and publish. This includes GPX 
 
 - Kitten weights: keep each cat's measurements separate; never invent a weighing date or calculate a trend from a single undated value. Record the date when supplied, preserve past readings and update the relevant profile page.
 - Dante and Amara profiles: birth date 23 July 2026, joined 29 October 2026. Update `cat-profiles-data.js` when confirmed details change.
+
+- The kitten profile portraits are provisionally assigned from coat colour/collar: grey/lilac/pink-collar image to Amara, warmer brown/blue-collar image to Dante. Seek confirmation if any ambiguity arises.
+- Kitten Watch: do not claim a live camera or insert a fabricated YouTube URL. When supplied, configure `kittenWatch.youtubeUrl` in `cat-profiles-data.js`; use an actual YouTube video/live ID and confirm embedding works.
+- Keep the Narlia GPS dashboard scripts, infographic modes, map controls, and daily/records/trends data bindings intact during kitten-only changes. Do not reinitialise or reset GPS data.

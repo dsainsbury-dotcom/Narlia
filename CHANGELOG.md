@@ -1,3 +1,11 @@
+## 1 November 2026 - Kitten portraits and Kitten Watch
+
+- Added the user's actual Amara and Dante photographs as web-optimised portrait assets, provisionally assigned using known coat colours and collars.
+- Added the confirmed sexes from the supplied growth-tracker screenshots (Amara female, Dante male).
+- Added a Kitten Watch tab and a placeholder page. It will load the YouTube stream when a valid link is provided; no live stream is currently connected.
+- Preserved the third-party growth tracker as the source for kitten weigh-ins, with the last reported 1.6 kg and 1.7 kg readings still undated.
+- Checked Narlia's existing GPX data scripts, mode buttons, live bindings and all six dashboard sections remained wired; this release does not change Narlia's GPS data.
+
 ## 1 November 2026 - GPX refresh and Dante/Amara pages
 
 - Merged Narlia's 19 October to 1 November GPX export, deduplicating timestamps and excluding two isolated implausible GPS spikes.

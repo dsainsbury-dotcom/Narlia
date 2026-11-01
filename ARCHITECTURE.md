@@ -129,3 +129,11 @@ Do not rewrite the whole app during routine updates. Keep data updates isolated 
 - Dante and Amara were born 23 July 2026 and joined the household 29 October 2026. Their last reported weights are 1.7 kg and 1.6 kg respectively; measurement dates are unknown, so no growth trend is inferred.
 - Only Narlia has GPS data (tracker IAJVTCCE). No kitten GPS points are included in her totals.
 - Future dated weight measurements should be added per cat, preserving history. Use separate tracker identities if Dante or Amara start GPS tracking.
+
+## Kitten portraits and Kitten Watch (1 November 2026)
+
+- `media/amara-portrait-20261101.webp` and `media/dante-portrait-20261101.webp` are cropped, web-optimised versions of the user's supplied photographs. The first grey/lilac kitten is provisionally Amara, the second warmer brown kitten provisionally Dante, consistent with known coat descriptions; confirm the assignment when possible.
+- The Our Cats overview and each kitten's profile show their own portrait and sex (Amara female, Dante male).
+- `cat-profiles-data.js` holds `kittenWatch.youtubeUrl`, initially `null`. The Kitten Watch navigation/page displays a clear not-connected state. On receipt of a valid YouTube watch/live URL, set this field to load a privacy-enhanced YouTube player; no URL is fabricated.
+- Growth tracking remains separate from the third-party kitten weight app. One undated weight per kitten is recorded without implying a growth trend. Add dated weights from confirmed measurements.
+- The approved Narlia GPS dashboard and data scripts remain unchanged by this kitten-only update. Both launchers share a cache-busting build ID.

@@ -28,6 +28,8 @@ jobs:
           node --check ui-runtime-fixes.js
           node --check cat-profiles-data.js
           node --check cat-profiles.js
+          test -s media/amara-portrait-20261101.webp
+          test -s media/dante-portrait-20261101.webp
           for f in gpx-live-data*.js; do node --check "$f"; done
       - name: Validate release wiring
         shell: bash
@@ -46,6 +48,21 @@ jobs:
           grep -Fq 'cat-profiles.js' index.html
           grep -Fq 'cat-profiles-data.js' launch-20260825.html
           grep -Fq 'cat-profiles.js' launch-20260825.html
+          grep -Fq 'kittenWatch:{youtubeUrl:null}' cat-profiles-data.js
+          grep -Fq 'Kitten Watch' cat-profiles.js
+          grep -Fq 'media/amara-portrait-20261101.webp' cat-profiles-data.js
+          grep -Fq 'media/dante-portrait-20261101.webp' cat-profiles-data.js
+          # All existing Narlia GPS tabs/modes remain wired and latest data refreshes each view.
+          grep -Fq 'gpx-live-data-20261101.js' index.html
+          grep -Fq 'DATA.infographic_week=' gpx-live-data-20261101.js
+          grep -Fq 'renderDays()' gpx-live-data-20261101.js
+          grep -Fq 'renderRecords()' gpx-live-data-20261101.js
+          grep -Fq 'renderTrends()' gpx-live-data-20261101.js
+          grep -Fq 'renderInfoBars()' gpx-live-data-20261101.js
+          grep -Fq 'DATA.all_segments=' gpx-live-data-20261101.js
+          grep -Fq 'DATA.end=fd(latest)' gpx-live-data-20261101.js
+          grep -Fq 'TOTAL HISTORY' infographic-controls.js
+          grep -Fq 'DAILY EXPLORER' infographic-controls.js
           grep -Fq 'data:image/jpeg;base64' narlia-avatar-approved.js
           grep -Fq "querySelectorAll('.logo,.petavatar')" narlia-avatar-approved.js
           grep -Fq 'NARLIA_DAILY_EXPLORER_LATEST' daily-explorer-fix.js
