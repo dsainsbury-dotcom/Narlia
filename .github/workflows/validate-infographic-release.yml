@@ -52,7 +52,7 @@ jobs:
           grep -Fq 'cat-profiles.js' index.html
           grep -Fq 'cat-profiles-data.js' launch-20260825.html
           grep -Fq 'cat-profiles.js' launch-20260825.html
-          grep -Fq 'kittenWatch:{youtubeUrl:null}' cat-profiles-data.js
+          grep -Fq '"youtubeUrl": null' cat-profiles-data.js
           grep -Fq 'Kitten Watch' cat-profiles.js
           grep -Fq 'media/amara-portrait-20261101.webp' cat-profiles-data.js
           grep -Fq 'media/dante-portrait-20261101.webp' cat-profiles-data.js
