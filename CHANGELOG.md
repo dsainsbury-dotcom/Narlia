@@ -1,3 +1,10 @@
+## 1 November 2026 - Dated kitten weights and photo galleries
+
+- Confirmed Auto Photos album `Dante and Amara` (12 photos at inspection), with older littermate images pending identity confirmation.
+- Dated Dante's 1.70 kg and Amara's 1.60 kg weigh-ins to Tuesday 27 October 2026 (second vaccinations).
+- Added separate photo gallery sections for each kitten with their own portraits and a verified shared picture with mum, included in both galleries.
+- Left Narlia's GPS dashboard, infographic buttons and GPX data scripts unchanged; synchronized both launchers.
+
 ## 1 November 2026 - Kitten portraits and Kitten Watch
 
 - Added the user's actual Amara and Dante photographs as web-optimised portrait assets, provisionally assigned using known coat colours and collars.

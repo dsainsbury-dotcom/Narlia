@@ -18,3 +18,7 @@ Any new cat-related input triggers a site update and publish. This includes GPX 
 - The kitten profile portraits are provisionally assigned from coat colour/collar: grey/lilac/pink-collar image to Amara, warmer brown/blue-collar image to Dante. Seek confirmation if any ambiguity arises.
 - Kitten Watch: do not claim a live camera or insert a fabricated YouTube URL. When supplied, configure `kittenWatch.youtubeUrl` in `cat-profiles-data.js`; use an actual YouTube video/live ID and confirm embedding works.
 - Keep the Narlia GPS dashboard scripts, infographic modes, map controls, and daily/records/trends data bindings intact during kitten-only changes. Do not reinitialise or reset GPS data.
+
+- Photo albums: source is Auto Photos album `Dante and Amara` (`wE4DN-4klDuEIpI6RXJWC`). Place photos of a single confirmed kitten in that kitten's gallery; place shared photos in both galleries. Ask for identification if unclear, particularly for red/orange collars in older litter photos. Do not publish pictures of other kittens as Dante/Amara.
+- Update weightDate and weights[] with the measurement date, never the screenshot upload date. Baseline: both measured 2026-10-27 at their second jabs.
+- New Auto Photos uploads do not automatically appear on GitHub Pages; only promise regular checks/updates when a real scheduled workflow has been configured.

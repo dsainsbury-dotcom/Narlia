@@ -137,3 +137,11 @@ Do not rewrite the whole app during routine updates. Keep data updates isolated 
 - `cat-profiles-data.js` holds `kittenWatch.youtubeUrl`, initially `null`. The Kitten Watch navigation/page displays a clear not-connected state. On receipt of a valid YouTube watch/live URL, set this field to load a privacy-enhanced YouTube player; no URL is fabricated.
 - Growth tracking remains separate from the third-party kitten weight app. One undated weight per kitten is recorded without implying a growth trend. Add dated weights from confirmed measurements.
 - The approved Narlia GPS dashboard and data scripts remain unchanged by this kitten-only update. Both launchers share a cache-busting build ID.
+
+## Auto Photos album and dated kitten weights (1 November 2026)
+
+- Auto Photos album `Dante and Amara`, id `wE4DN-4klDuEIpI6RXJWC`, contained 12 photos on 1 November 2026. This is the intended source for future kitten galleries.
+- Several older album images include multiple littermates. Do not assign older red/orange-collar kittens to Dante or Amara without user confirmation. Images clearly depicting both confirmed kittens should be added to both profiles.
+- Current kitten galleries are separate per kitten and include each supplied portrait plus the existing verified shared photo with mum from 25 August 2026. The `gallery` arrays in `cat-profiles-data.js` can be expanded as new images are approved.
+- Both kitten weights were taken on Tuesday 27 October 2026 at second vaccinations: Dante 1.70 kg; Amara 1.60 kg. They are dated observations, not proof of a growth trend.
+- Auto Photos album images are not live-linked to the static GitHub Pages site. Future photo additions require fetching and publishing approved images. Do not claim unattended automatic updates without an actual scheduled workflow.
