@@ -167,6 +167,15 @@ window.NARLIA_CAT_PROFILES={
         "shared": false
       },
       {
+        "src": "media/auto-U4Y0if-1IeuvE8_mZFLHb.webp",
+        "caption": "Amara with Nanny Jackie · 1 November 2026",
+        "capturedAt": "2026-11-01",
+        "source": "Auto Photos",
+        "autoId": "U4Y0if-1IeuvE8_mZFLHb",
+        "shared": false,
+        "special": true
+      },
+      {
         "src": "media/auto-G-rZk68_tPCG10uNBEh34.webp",
         "caption": "Dante and Amara together · blue and pink collars · 31 October 2026",
         "capturedAt": "2026-10-31",
