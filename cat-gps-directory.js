@@ -1,6 +1,6 @@
 (()=>{
 'use strict';
-const build='20261101-gps-nav-fix-2',cats=window.NARLIA_CAT_PROFILES,gps=window.CAT_GPS_DATA;
+const build='20261101-remove-duplicate-gps-3',cats=window.NARLIA_CAT_PROFILES,gps=window.CAT_GPS_DATA;
 if(!cats||!gps)return;
 const views=[
  ['infographic','Infographic','Recent and all-time GPS activity will appear here after tracking starts.'],
@@ -76,7 +76,7 @@ function init(){
  const gpsTab=document.createElement('button');gpsTab.className='tab';gpsTab.dataset.page='gps-directory';gpsTab.textContent='GPS Directory';gpsTab.onclick=()=>navGo('gps-directory');
  if(our){nav.insertBefore(our,nav.firstElementChild);nav.insertBefore(gpsTab,our.nextSibling);}else nav.insertBefore(gpsTab,first);
  if(watch)nav.insertBefore(watch,gpsTab.nextSibling);
- const narliaTab=document.createElement('button');narliaTab.type='button';narliaTab.className='tab';narliaTab.dataset.page='infographic';narliaTab.textContent='Narlia GPS';narliaTab.setAttribute('aria-label','Open Narlia GPS infographic');narliaTab.onclick=()=>navGo('infographic');nav.insertBefore(narliaTab,first);
+ // Existing Infographic and other GPS tabs are Narlia's; no duplicate nav item.
  ['infographic','story','last30','day','places','records','trends'].forEach(id=>{
   const p=document.getElementById(id);if(!p)return;
   p.prepend(node('<div class="gps-narlia-banner"><span><strong>Narlia’s GPS</strong> · Tracker IAJVTCCE · These statistics belong to Narlia only.</span>'+button('Switch cat','data-gps-go="gps-directory"',true)+'</div>'));
