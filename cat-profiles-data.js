@@ -6,6 +6,14 @@ window.NARLIA_CAT_PROFILES={
     "photo": "media/auto-jiFhNlNijjb99NaVi5GFm.webp",
     "gallery": [
       {
+        "src": "media/auto-WzK77uMGmR4VCuWRqRB4C.webp",
+        "caption": "Narlia · brown tabby with white paws · 26 October 2026",
+        "capturedAt": "2026-10-26",
+        "source": "Auto Photos",
+        "autoId": "WzK77uMGmR4VCuWRqRB4C",
+        "shared": false
+      },
+      {
         "src": "media/auto-jiFhNlNijjb99NaVi5GFm.webp",
         "caption": "Tabby cat on a window perch · 13 September 2026",
         "capturedAt": "2026-09-13",
@@ -38,6 +46,14 @@ window.NARLIA_CAT_PROFILES={
         "src": "media/dante-portrait-20261101.webp",
         "caption": "Dante at home",
         "shared": false
+      },
+      {
+        "src": "media/auto-G-rZk68_tPCG10uNBEh34.webp",
+        "caption": "Dante and Amara together · blue and pink collars · 31 October 2026",
+        "capturedAt": "2026-10-31",
+        "source": "Auto Photos",
+        "autoId": "G-rZk68_tPCG10uNBEh34",
+        "shared": true
       },
       {
         "src": "media/auto-JO03fu17jaTahHKeUvix_.webp",
@@ -149,6 +165,14 @@ window.NARLIA_CAT_PROFILES={
         "src": "media/amara-portrait-20261101.webp",
         "caption": "Amara at home",
         "shared": false
+      },
+      {
+        "src": "media/auto-G-rZk68_tPCG10uNBEh34.webp",
+        "caption": "Dante and Amara together · blue and pink collars · 31 October 2026",
+        "capturedAt": "2026-10-31",
+        "source": "Auto Photos",
+        "autoId": "G-rZk68_tPCG10uNBEh34",
+        "shared": true
       },
       {
         "src": "media/auto-t71eZvLeTZjXYU8xFRcDZ.webp",
