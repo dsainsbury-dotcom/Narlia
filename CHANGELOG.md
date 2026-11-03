@@ -39,6 +39,13 @@
 
 # Narlia's World - Changelog
 
+## 3 November 2026 - Kitten Watch and kitten photo update
+
+- Connected Kitten Watch to the live YouTube video and updated its page copy.
+- Checked all 26 photos in the connected Dante and Amara Auto Photos album.
+- Imported six new photos with verified kitten identities as stable WebP assets; shared photos appear in both galleries.
+- Kept YouTube privacy unchanged; the stream remains Private.
+
 This changelog records significant product/data/reliability changes. Git commit history remains the detailed audit trail.
 
 ## 2026-08-29

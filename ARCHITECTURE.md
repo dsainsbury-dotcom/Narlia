@@ -134,7 +134,7 @@ Do not rewrite the whole app during routine updates. Keep data updates isolated 
 
 - `media/amara-portrait-20261101.webp` and `media/dante-portrait-20261101.webp` are cropped, web-optimised versions of the user's supplied photographs. The first grey/lilac kitten is provisionally Amara, the second warmer brown kitten provisionally Dante, consistent with known coat descriptions; confirm the assignment when possible.
 - The Our Cats overview and each kitten's profile show their own portrait and sex (Amara female, Dante male).
-- `cat-profiles-data.js` holds `kittenWatch.youtubeUrl`, initially `null`. The Kitten Watch navigation/page displays a clear not-connected state. On receipt of a valid YouTube watch/live URL, set this field to load a privacy-enhanced YouTube player; no URL is fabricated.
+- `cat-profiles-data.js` holds the current Kitten Watch YouTube watch URL and the page embeds its validated video ID with the privacy-enhanced YouTube player. A Private YouTube stream may not be playable to visitors outside the owner account; change visibility only with Darren’s approval.
 - Growth tracking remains separate from the third-party kitten weight app. One undated weight per kitten is recorded without implying a growth trend. Add dated weights from confirmed measurements.
 - The approved Narlia GPS dashboard and data scripts remain unchanged by this kitten-only update. Both launchers share a cache-busting build ID.
 

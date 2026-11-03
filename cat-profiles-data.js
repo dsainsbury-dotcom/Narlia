@@ -216,6 +216,54 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       },
       {
+        "src": "media/auto-4XzG9XE1aI8yf6IQJT70R.webp",
+        "caption": "Dante and Amara watching a toy · orange and red collars",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "4XzG9XE1aI8yf6IQJT70R",
+        "shared": true
+      },
+      {
+        "src": "media/auto-vOwDOQEzw2Wv5x5Lqm6Hs.webp",
+        "caption": "Dante and Amara playing · orange and red collars",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "vOwDOQEzw2Wv5x5Lqm6Hs",
+        "shared": true
+      },
+      {
+        "src": "media/auto-48xk9PA1KLDKk9OUHz5OX.webp",
+        "caption": "Dante and Amara looking up · orange and red collars",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "48xk9PA1KLDKk9OUHz5OX",
+        "shared": true
+      },
+      {
+        "src": "media/auto-bFSTRomgBrPSAEtJ9gkJa.webp",
+        "caption": "Dante and Amara playing together · orange and red collars",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "bFSTRomgBrPSAEtJ9gkJa",
+        "shared": true
+      },
+      {
+        "src": "media/auto-5TNTXOcudF1enD5gS_c7E.webp",
+        "caption": "Dante and Amara reaching for a toy · orange and red collars",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "5TNTXOcudF1enD5gS_c7E",
+        "shared": true
+      },
+      {
+        "src": "media/auto-lPUsrGGO1mfENsrIKfE38.webp",
+        "caption": "Dante playing with a sibling · red collar",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "lPUsrGGO1mfENsrIKfE38",
+        "shared": false
+      },
+      {
         "src": "media/auto-j5RWZvUFQBB7ZN0T3aI10.webp",
         "caption": "Amara and Dante cuddling together",
         "capturedAt": "2026-09-10",
@@ -344,6 +392,46 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       },
       {
+        "src": "media/auto-4XzG9XE1aI8yf6IQJT70R.webp",
+        "caption": "Dante and Amara watching a toy · orange and red collars",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "4XzG9XE1aI8yf6IQJT70R",
+        "shared": true
+      },
+      {
+        "src": "media/auto-vOwDOQEzw2Wv5x5Lqm6Hs.webp",
+        "caption": "Dante and Amara playing · orange and red collars",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "vOwDOQEzw2Wv5x5Lqm6Hs",
+        "shared": true
+      },
+      {
+        "src": "media/auto-48xk9PA1KLDKk9OUHz5OX.webp",
+        "caption": "Dante and Amara looking up · orange and red collars",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "48xk9PA1KLDKk9OUHz5OX",
+        "shared": true
+      },
+      {
+        "src": "media/auto-bFSTRomgBrPSAEtJ9gkJa.webp",
+        "caption": "Dante and Amara playing together · orange and red collars",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "bFSTRomgBrPSAEtJ9gkJa",
+        "shared": true
+      },
+      {
+        "src": "media/auto-5TNTXOcudF1enD5gS_c7E.webp",
+        "caption": "Dante and Amara reaching for a toy · orange and red collars",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "5TNTXOcudF1enD5gS_c7E",
+        "shared": true
+      },
+      {
         "src": "media/auto-j5RWZvUFQBB7ZN0T3aI10.webp",
         "caption": "Amara and Dante cuddling together",
         "capturedAt": "2026-09-10",
@@ -359,6 +447,6 @@ window.NARLIA_CAT_PROFILES={
     ]
   },
   "kittenWatch": {
-    "youtubeUrl": null
+    "youtubeUrl": "https://www.youtube.com/watch?v=5LufmVE88Ic"
   }
 };

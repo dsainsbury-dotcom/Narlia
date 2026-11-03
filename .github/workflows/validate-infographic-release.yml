@@ -56,8 +56,14 @@ jobs:
           grep -Fq 'cat-profiles.js' index.html
           grep -Fq 'cat-profiles-data.js' launch-20260825.html
           grep -Fq 'cat-profiles.js' launch-20260825.html
-          grep -Fq '"youtubeUrl": null' cat-profiles-data.js
+          grep -Fq '"youtubeUrl": "https://www.youtube.com/watch?v=5LufmVE88Ic"' cat-profiles-data.js
           grep -Fq 'Kitten Watch' cat-profiles.js
+          test -s media/auto-4XzG9XE1aI8yf6IQJT70R.webp
+          test -s media/auto-vOwDOQEzw2Wv5x5Lqm6Hs.webp
+          test -s media/auto-48xk9PA1KLDKk9OUHz5OX.webp
+          test -s media/auto-bFSTRomgBrPSAEtJ9gkJa.webp
+          test -s media/auto-5TNTXOcudF1enD5gS_c7E.webp
+          test -s media/auto-lPUsrGGO1mfENsrIKfE38.webp
           grep -Fq 'media/amara-portrait-20261101.webp' cat-profiles-data.js
           grep -Fq 'media/dante-portrait-20261101.webp' cat-profiles-data.js
           # All existing Narlia GPS tabs/modes remain wired and latest data refreshes each view.
