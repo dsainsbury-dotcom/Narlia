@@ -139,6 +139,30 @@ window.NARLIA_CAT_PROFILES={
     ],
     "gallery": [
       {
+        "src": "media/auto-YZw5MESP_uJmvgTRFfRUF.webp",
+        "caption": "Dante and Amara asleep together in their basket · 3 November 2026",
+        "capturedAt": "2026-11-03",
+        "source": "Auto Photos",
+        "autoId": "YZw5MESP_uJmvgTRFfRUF",
+        "shared": true
+      },
+      {
+        "src": "media/auto-nJsomIgVViZgc96FCsfli.webp",
+        "caption": "Dante and Amara having breakfast · blue and pink collars · 3 November 2026",
+        "capturedAt": "2026-11-03",
+        "source": "Auto Photos",
+        "autoId": "nJsomIgVViZgc96FCsfli",
+        "shared": true
+      },
+      {
+        "src": "media/auto-AEfXqVFJlkm8OgO4Tb4Op.webp",
+        "caption": "Dante and Amara in their basket · 2 November 2026",
+        "capturedAt": "2026-11-02",
+        "source": "Auto Photos",
+        "autoId": "AEfXqVFJlkm8OgO4Tb4Op",
+        "shared": true
+      },
+      {
         "src": "media/dante-portrait-20261101.webp",
         "caption": "Dante at home",
         "shared": false
@@ -305,6 +329,38 @@ window.NARLIA_CAT_PROFILES={
       }
     ],
     "gallery": [
+      {
+        "src": "media/auto-YZw5MESP_uJmvgTRFfRUF.webp",
+        "caption": "Dante and Amara asleep together in their basket · 3 November 2026",
+        "capturedAt": "2026-11-03",
+        "source": "Auto Photos",
+        "autoId": "YZw5MESP_uJmvgTRFfRUF",
+        "shared": true
+      },
+      {
+        "src": "media/auto-nJsomIgVViZgc96FCsfli.webp",
+        "caption": "Dante and Amara having breakfast · blue and pink collars · 3 November 2026",
+        "capturedAt": "2026-11-03",
+        "source": "Auto Photos",
+        "autoId": "nJsomIgVViZgc96FCsfli",
+        "shared": true
+      },
+      {
+        "src": "media/auto-AEfXqVFJlkm8OgO4Tb4Op.webp",
+        "caption": "Dante and Amara in their basket · 2 November 2026",
+        "capturedAt": "2026-11-02",
+        "source": "Auto Photos",
+        "autoId": "AEfXqVFJlkm8OgO4Tb4Op",
+        "shared": true
+      },
+      {
+        "src": "media/auto-3tPrO4njo0xWz63KjBGlt.webp",
+        "caption": "Amara relaxing beside Darren · pink collar · 2 November 2026",
+        "capturedAt": "2026-11-02",
+        "source": "Auto Photos",
+        "autoId": "3tPrO4njo0xWz63KjBGlt",
+        "shared": false
+      },
       {
         "src": "media/amara-portrait-20261101.webp",
         "caption": "Amara at home",
