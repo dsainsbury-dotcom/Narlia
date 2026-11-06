@@ -129,12 +129,16 @@ window.NARLIA_CAT_PROFILES={
       "now": "blue"
     },
     "photo": "media/dante-portrait-20261101.webp",
-    "lastWeightKg": 1.7,
-    "weightDate": "2026-10-27",
+    "lastWeightKg": 2,
+    "weightDate": "2026-11-06",
     "weights": [
       {
         "date": "2026-10-27",
         "kg": 1.7
+      },
+      {
+        "date": "2026-11-06",
+        "kg": 2
       }
     ],
     "gallery": [
@@ -308,7 +312,9 @@ window.NARLIA_CAT_PROFILES={
         "caption": "Dante and Amara with mum · 25 August 2026",
         "shared": true
       }
-    ]
+    ],
+    "growthChart": "media/dante-growth-chart-2026-11-06.png",
+    "weightTrendNote": "Up 0.2 kg since last week, as reported on 6 November 2026."
   },
   "amara": {
     "name": "Amara",
@@ -320,12 +326,16 @@ window.NARLIA_CAT_PROFILES={
       "now": "pink"
     },
     "photo": "media/amara-portrait-20261101.webp",
-    "lastWeightKg": 1.6,
-    "weightDate": "2026-10-27",
+    "lastWeightKg": 1.8,
+    "weightDate": "2026-11-06",
     "weights": [
       {
         "date": "2026-10-27",
         "kg": 1.6
+      },
+      {
+        "date": "2026-11-06",
+        "kg": 1.8
       }
     ],
     "gallery": [
@@ -500,7 +510,9 @@ window.NARLIA_CAT_PROFILES={
         "caption": "Dante and Amara with mum · 25 August 2026",
         "shared": true
       }
-    ]
+    ],
+    "growthChart": "media/amara-growth-chart-2026-11-06.png",
+    "weightTrendNote": "Up 0.2 kg since last week, as reported on 6 November 2026."
   },
   "kittenWatch": {
     "youtubeUrl": "https://www.youtube.com/watch?v=YE5EIveKZQw"
