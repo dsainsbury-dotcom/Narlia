@@ -56,7 +56,7 @@ jobs:
           grep -Fq 'cat-profiles.js' index.html
           grep -Fq 'cat-profiles-data.js' launch-20260825.html
           grep -Fq 'cat-profiles.js' launch-20260825.html
-          grep -Fq '"youtubeUrl": "https://www.youtube.com/watch?v=5LufmVE88Ic"' cat-profiles-data.js
+          grep -Fq '"youtubeUrl": "https://www.youtube.com/watch?v=whHJ8SBiNnk"' cat-profiles-data.js
           grep -Fq 'Kitten Watch' cat-profiles.js
           test -s media/auto-4XzG9XE1aI8yf6IQJT70R.webp
           test -s media/auto-vOwDOQEzw2Wv5x5Lqm6Hs.webp
