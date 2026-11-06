@@ -503,6 +503,6 @@ window.NARLIA_CAT_PROFILES={
     ]
   },
   "kittenWatch": {
-    "youtubeUrl": "https://www.youtube.com/watch?v=1deY3h8Rvow"
+    "youtubeUrl": ""
   }
 };
