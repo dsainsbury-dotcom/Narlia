@@ -421,7 +421,7 @@ window.NARLIA_CAT_PROFILES={
       },
       {
         "src": "media/2026-08-25-amara-dante-with-mum.webp",
-        "caption": "Dante and Amara with mum · 25 August 2026",
+        "caption": "Dante and Amara with mum · 8 August 2026",
         "shared": true
       }
     ],
@@ -715,7 +715,7 @@ window.NARLIA_CAT_PROFILES={
       },
       {
         "src": "media/2026-08-25-amara-dante-with-mum.webp",
-        "caption": "Dante and Amara with mum · 25 August 2026",
+        "caption": "Dante and Amara with mum · 8 August 2026",
         "shared": true
       }
     ],
