@@ -143,6 +143,30 @@ window.NARLIA_CAT_PROFILES={
     ],
     "gallery": [
       {
+        "src": "media/auto-FU-pNg_M4kGMlkjSsYNF-.webp",
+        "caption": "Dante resting on the white bed · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "FU-pNg_M4kGMlkjSsYNF-",
+        "shared": false
+      },
+      {
+        "src": "media/auto-yhwdKTy1BHDy0NubM3qTq.webp",
+        "caption": "Dante looking across the white bed · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "yhwdKTy1BHDy0NubM3qTq",
+        "shared": false
+      },
+      {
+        "src": "media/auto-hbLfUx0HvdFDv1Q3GQHK0.webp",
+        "caption": "Dante sitting on the chair · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "hbLfUx0HvdFDv1Q3GQHK0",
+        "shared": false
+      },
+      {
         "src": "media/auto-nAUo1g0wh4Fpy6srwsgDC.webp",
         "caption": "Dante and Amara cuddling together · 6 November 2026",
         "capturedAt": "2026-11-06",
@@ -427,6 +451,14 @@ window.NARLIA_CAT_PROFILES={
       }
     ],
     "gallery": [
+      {
+        "src": "media/auto-EE3kld0uwu59w99hIldjE.webp",
+        "caption": "Amara sitting on the counter · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "EE3kld0uwu59w99hIldjE",
+        "shared": false
+      },
       {
         "src": "media/auto-MpRAgcI5ZNGLicRBnbLRS.webp",
         "caption": "Amara curled up on her blanket · 6 November 2026",
