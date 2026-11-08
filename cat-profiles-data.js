@@ -121,6 +121,8 @@ window.NARLIA_CAT_PROFILES={
   },
   "dante": {
     "name": "Dante",
+    "pedigreeName": "Malaika Dante",
+    "pedigreeNote": "Pedigree details in progress",
     "born": "2026-07-23",
     "joined": "2026-10-29",
     "sex": "Male",
@@ -430,6 +432,8 @@ window.NARLIA_CAT_PROFILES={
   },
   "amara": {
     "name": "Amara",
+    "pedigreeName": "Malaika Amara",
+    "pedigreeNote": "Pedigree details in progress",
     "born": "2026-07-23",
     "joined": "2026-10-29",
     "sex": "Female",
