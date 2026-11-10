@@ -145,6 +145,46 @@ window.NARLIA_CAT_PROFILES={
     ],
     "gallery": [
       {
+        "src": "media/auto--c-gGaGSDy7WQ_loyAjre.webp",
+        "caption": "Dante relaxing in his chair · 9 November 2026",
+        "capturedAt": "2026-11-09",
+        "source": "Auto Photos",
+        "autoId": "-c-gGaGSDy7WQ_loyAjre",
+        "shared": false
+      },
+      {
+        "src": "media/auto-wy2QARLu2lS1R0J5ln7CK.webp",
+        "caption": "Dante relaxing in his chair · 9 November 2026",
+        "capturedAt": "2026-11-09",
+        "source": "Auto Photos",
+        "autoId": "wy2QARLu2lS1R0J5ln7CK",
+        "shared": false
+      },
+      {
+        "src": "media/auto-lnN9vtdOhDoAGtfAhMEBU.webp",
+        "caption": "Dante relaxing in his chair · 9 November 2026",
+        "capturedAt": "2026-11-09",
+        "source": "Auto Photos",
+        "autoId": "lnN9vtdOhDoAGtfAhMEBU",
+        "shared": false
+      },
+      {
+        "src": "media/auto-4FLptoV9Ixa2oPCvbZnfx.webp",
+        "caption": "Dante relaxing in his chair · 9 November 2026",
+        "capturedAt": "2026-11-09",
+        "source": "Auto Photos",
+        "autoId": "4FLptoV9Ixa2oPCvbZnfx",
+        "shared": false
+      },
+      {
+        "src": "media/auto-FxCvcu1S-uAz1PZa16iAc.webp",
+        "caption": "Dante and Amara together · 9 November 2026",
+        "capturedAt": "2026-11-09",
+        "source": "Auto Photos",
+        "autoId": "FxCvcu1S-uAz1PZa16iAc",
+        "shared": true
+      },
+      {
         "src": "media/auto-FU-pNg_M4kGMlkjSsYNF-.webp",
         "caption": "Dante resting on the white bed · 7 November 2026",
         "capturedAt": "2026-11-07",
@@ -167,6 +207,22 @@ window.NARLIA_CAT_PROFILES={
         "source": "Auto Photos",
         "autoId": "hbLfUx0HvdFDv1Q3GQHK0",
         "shared": false
+      },
+      {
+        "src": "media/auto-wozvYzDdtK1myt2Ikm9Tk.webp",
+        "caption": "Dante lounging on a lap · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "wozvYzDdtK1myt2Ikm9Tk",
+        "shared": false
+      },
+      {
+        "src": "media/auto-A49ApV92Gl63mmNIqX5VH.webp",
+        "caption": "Dante and Amara facing each other · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "A49ApV92Gl63mmNIqX5VH",
+        "shared": true
       },
       {
         "src": "media/auto-nAUo1g0wh4Fpy6srwsgDC.webp",
@@ -456,12 +512,68 @@ window.NARLIA_CAT_PROFILES={
     ],
     "gallery": [
       {
+        "src": "media/auto-FxCvcu1S-uAz1PZa16iAc.webp",
+        "caption": "Dante and Amara together · 9 November 2026",
+        "capturedAt": "2026-11-09",
+        "source": "Auto Photos",
+        "autoId": "FxCvcu1S-uAz1PZa16iAc",
+        "shared": true
+      },
+      {
         "src": "media/auto-EE3kld0uwu59w99hIldjE.webp",
         "caption": "Amara sitting on the counter · 7 November 2026",
         "capturedAt": "2026-11-07",
         "source": "Auto Photos",
         "autoId": "EE3kld0uwu59w99hIldjE",
         "shared": false
+      },
+      {
+        "src": "media/auto-nJNHkCcTZPxCu5tvZDbp8.webp",
+        "caption": "Amara curled up on a lap · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "nJNHkCcTZPxCu5tvZDbp8",
+        "shared": false
+      },
+      {
+        "src": "media/auto-n4S3SDJIGPed-ZLAMotXo.webp",
+        "caption": "Amara resting on a lap · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "n4S3SDJIGPed-ZLAMotXo",
+        "shared": false
+      },
+      {
+        "src": "media/auto-Ix7nQiOO1cM2lZxyUvNyI.webp",
+        "caption": "Amara having a cuddle · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "Ix7nQiOO1cM2lZxyUvNyI",
+        "shared": false
+      },
+      {
+        "src": "media/auto-hD4BuTOB_y6vMojCFhaWb.webp",
+        "caption": "Amara looking up close · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "hD4BuTOB_y6vMojCFhaWb",
+        "shared": false
+      },
+      {
+        "src": "media/auto-rpuYFrC0PQMAtHvUkI8sY.webp",
+        "caption": "Amara on the shop counter · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "rpuYFrC0PQMAtHvUkI8sY",
+        "shared": false
+      },
+      {
+        "src": "media/auto-A49ApV92Gl63mmNIqX5VH.webp",
+        "caption": "Dante and Amara facing each other · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "A49ApV92Gl63mmNIqX5VH",
+        "shared": true
       },
       {
         "src": "media/auto-MpRAgcI5ZNGLicRBnbLRS.webp",
