@@ -727,6 +727,6 @@ window.NARLIA_CAT_PROFILES={
     "weightTrendNote": "Up 0.2 kg since last week, as reported on 6 November 2026."
   },
   "kittenWatch": {
-    "youtubeUrl": "https://www.youtube.com/watch?v=whHJ8SBiNnk"
+    "youtubeUrl": "https://www.youtube.com/watch?v=xlOoZdn43ag"
   }
 };
