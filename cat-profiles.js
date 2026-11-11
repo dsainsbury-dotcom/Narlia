@@ -120,7 +120,7 @@ function familyTreePage(){
     '<div class="ft-frame" style="margin-top:18px"><div class="ft-header"><div><div class="ft-eyebrow">The Malaika family · Burmese cats</div><h2 class="cat-head">🌳 Dante &amp; Amara’s Family Tree</h2></div><div class="ft-pill">Pedigree records · 29 Oct 2026</div></div>'+
     '<p class="ft-subtitle">Five littermates, Mum and Dad, and four generations of their ancestors. Names, colours, registration numbers and champion titles are taken from the five pedigree certificates.</p>'+
     '<div class="ft-statline"><span class="ft-pill">🐾 5 kittens</span><span class="ft-pill">23 July 2026</span><span class="ft-pill">2 parents · 4 grandparents · 8 great-grandparents · 16 great-great-grandparents</span></div>'+
-    '<h3>The five brothers and sister</h3><p class="ft-sectionline">Amara is the only girl in the litter. Dante and Amara have their own linked photo profiles.</p><div class="ft-kittens">'+kittens+'</div>'+
+    '<h3>The five littermates</h3><p class="ft-sectionline">Amara is the only girl in the litter. Dante and Amara have their own linked photo profiles.</p><div class="ft-kittens">'+kittens+'</div>'+
     '<div class="ft-rule"></div><h3>Mum &amp; Dad</h3><div class="ft-parent-grid">'+parentCards+'</div><p class="ft-sectionline"><b>Tink</b> is Malaika Tinker Belle, Tily’s mother and the kittens’ maternal grandmother. She also helped care for them.</p>'+
     '<div class="ft-rule"></div><h3>Explore their ancestors</h3><p class="ft-sectionline">Read each branch from top to bottom. The indented lines show each cat’s sire and dam. Tap a heading to collapse a branch.</p>'+
     '<div class="ft-ancestry-grid">'+lineages+'</div>'+
