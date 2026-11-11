@@ -122,7 +122,7 @@ window.NARLIA_CAT_PROFILES={
   "dante": {
     "name": "Dante",
     "pedigreeName": "Malaika Dante",
-    "pedigreeNote": "Pedigree details in progress",
+    "pedigreeNote": "Four generations of ancestry recorded from the pedigree certificate",
     "born": "2026-07-23",
     "joined": "2026-10-29",
     "sex": "Male",
@@ -484,12 +484,14 @@ window.NARLIA_CAT_PROFILES={
       }
     ],
     "growthChart": "media/dante-growth-chart-2026-11-06.png",
-    "weightTrendNote": "Up 0.2 kg since last week, as reported on 6 November 2026."
+    "weightTrendNote": "Up 0.2 kg since last week, as reported on 6 November 2026.",
+    "registrationNumber": "CS1234204",
+    "colour": "Chocolate"
   },
   "amara": {
     "name": "Amara",
     "pedigreeName": "Malaika Amara",
-    "pedigreeNote": "Pedigree details in progress",
+    "pedigreeNote": "Four generations of ancestry recorded from the pedigree certificate",
     "born": "2026-07-23",
     "joined": "2026-10-29",
     "sex": "Female",
@@ -836,9 +838,249 @@ window.NARLIA_CAT_PROFILES={
       }
     ],
     "growthChart": "media/amara-growth-chart-2026-11-06.png",
-    "weightTrendNote": "Up 0.2 kg since last week, as reported on 6 November 2026."
+    "weightTrendNote": "Up 0.2 kg since last week, as reported on 6 November 2026.",
+    "registrationNumber": "CS1234205",
+    "colour": "Lilac"
   },
   "kittenWatch": {
     "youtubeUrl": "https://www.youtube.com/watch?v=V_Am1B2L8t8"
+  },
+  "familyTree": {
+    "status": "Pedigree certificate transcribed",
+    "pedigreeIssueDate": "2026-10-29",
+    "birthDate": "2026-07-23",
+    "breed": "Burmese",
+    "breeder": "Nigel Skinner & Christine Green",
+    "source": "Pedigree Certificates (26-07-23 - Tilly-Midas) - Text Copy · five sibling tabs, copied 10 November 2026",
+    "siblings": [
+      {
+        "name": "Ozzy",
+        "pedigreeName": "Malaika Ozzy",
+        "registration": "CS1234203",
+        "sex": "Male",
+        "colour": "Lilac"
+      },
+      {
+        "name": "Dante",
+        "pedigreeName": "Malaika Dante",
+        "registration": "CS1234204",
+        "sex": "Male",
+        "colour": "Chocolate",
+        "profile": "dante"
+      },
+      {
+        "name": "Amara",
+        "pedigreeName": "Malaika Amara",
+        "registration": "CS1234205",
+        "sex": "Female",
+        "colour": "Lilac",
+        "profile": "amara"
+      },
+      {
+        "name": "Foxy",
+        "pedigreeName": "Malaika Foxy",
+        "registration": "CS1234206",
+        "sex": "Male",
+        "colour": "Brown"
+      },
+      {
+        "name": "Jerry",
+        "pedigreeName": "Malaika Jerry",
+        "registration": "CS1234207",
+        "sex": "Male",
+        "colour": "Chocolate"
+      }
+    ],
+    "father": {
+      "name": "Nemorez Midas Touch",
+      "registration": "CS1097791",
+      "colour": "Blue",
+      "note": "Dad · Midas",
+      "parents": [
+        {
+          "name": "Nemorez Song Songblue",
+          "registration": "CS860693",
+          "colour": "Blue",
+          "parents": [
+            {
+              "name": "Karakoram Whata Rumpus",
+              "registration": "CS839214",
+              "colour": "Blue",
+              "parents": [
+                {
+                  "name": "Rumba Official Warning",
+                  "registration": "CS766992",
+                  "colour": "Blue",
+                  "title": "Champion"
+                },
+                {
+                  "name": "Rainsong Meredith Of Fife",
+                  "registration": "CS681457",
+                  "colour": "Blue"
+                }
+              ]
+            },
+            {
+              "name": "Penwynkatz Rose Maddox",
+              "registration": "CS789397",
+              "colour": "Chocolate",
+              "parents": [
+                {
+                  "name": "Issamee Jesse James",
+                  "registration": "CS341085",
+                  "colour": "Blue",
+                  "title": "Champion"
+                },
+                {
+                  "name": "Reltub Tiamariah",
+                  "registration": "CS690570",
+                  "colour": "Brown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nemorez Fidgetthemidget",
+          "registration": "CS1065728",
+          "colour": "Lilac",
+          "parents": [
+            {
+              "name": "Emprise Hugo",
+              "registration": "CS785205",
+              "colour": "Brown",
+              "parents": [
+                {
+                  "name": "Chathera Mulvey",
+                  "registration": "CS607571",
+                  "colour": "Chocolate"
+                },
+                {
+                  "name": "Emprise Wynsome Witch",
+                  "registration": "CS549050",
+                  "colour": "Blue",
+                  "title": "Champion"
+                }
+              ]
+            },
+            {
+              "name": "Nemorez Littlemissdynamite",
+              "registration": "CS868234",
+              "colour": "Lilac",
+              "parents": [
+                {
+                  "name": "Karlac Sundance Kid",
+                  "registration": "CS636948",
+                  "colour": "Lilac",
+                  "title": "Imperial Grand Champion"
+                },
+                {
+                  "name": "Nemorez Penelope Pitstop",
+                  "registration": "CS794681",
+                  "colour": "Brown"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mother": {
+      "name": "Malaika Mathilde",
+      "registration": "CS1183198",
+      "colour": "Chocolate",
+      "note": "Mum · Tily",
+      "parents": [
+        {
+          "name": "Talitoe Theodore of Wendele",
+          "registration": "CS885087",
+          "colour": "Chocolate",
+          "title": "International Champion",
+          "parents": [
+            {
+              "name": "Wendele Cats Mister Bagpuss",
+              "registration": "LO45229 (Spain)",
+              "colour": "Brown",
+              "title": "International Champion",
+              "parents": [
+                {
+                  "name": "Jemville Wizard Of Oz",
+                  "registration": "LO42030 (Spain)",
+                  "colour": "Brown",
+                  "title": "Grand International Champion"
+                },
+                {
+                  "name": "Wendele Cats Weronika",
+                  "registration": "LO40551 (Spain)",
+                  "colour": "Lilac"
+                }
+              ]
+            },
+            {
+              "name": "Jax Waltzer",
+              "registration": "CS676740",
+              "colour": "Brown",
+              "title": "Champion",
+              "parents": [
+                {
+                  "name": "Belcanto Golden Cockerel",
+                  "registration": "CS534527",
+                  "colour": "Brown"
+                },
+                {
+                  "name": "Jax Dancer",
+                  "registration": "CS607473",
+                  "colour": "Blue"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Malaika Tinker Belle",
+          "registration": "CS882618",
+          "colour": "Brown",
+          "note": "Tink · maternal grandmother and caregiver",
+          "parents": [
+            {
+              "name": "Karlac Son-Ofsundance",
+              "registration": "CS827454",
+              "colour": "Blue",
+              "title": "Champion",
+              "parents": [
+                {
+                  "name": "Karlac Sundance Kid",
+                  "registration": "CS636948",
+                  "colour": "Lilac",
+                  "title": "Imperial Grand Champion"
+                },
+                {
+                  "name": "Karlac Razamataz",
+                  "registration": "CS572877",
+                  "colour": "Blue"
+                }
+              ]
+            },
+            {
+              "name": "ADATEBU Malaika Bliss",
+              "registration": "CS705554",
+              "colour": "Brown",
+              "parents": [
+                {
+                  "name": "Dasteve O'Neandonly",
+                  "registration": "CS572700",
+                  "colour": "Brown"
+                },
+                {
+                  "name": "Syltonia Cleopatra",
+                  "registration": "CS616470",
+                  "colour": "Chocolate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   }
 };
