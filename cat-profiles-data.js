@@ -449,14 +449,6 @@ window.NARLIA_CAT_PROFILES={
         "shared": false
       },
       {
-        "src": "media/auto-oUCr731rxzC8ddrIvP5_z.webp",
-        "caption": "Amara in her orange collar · 11 October 2026",
-        "capturedAt": "2026-10-11",
-        "source": "Auto Photos",
-        "autoId": "oUCr731rxzC8ddrIvP5_z",
-        "shared": false
-      },
-      {
         "src": "media/auto-xwwwAb6qQhec2sncQ7pB8.webp",
         "caption": "Dante and Amara with their littermates",
         "capturedAt": "2026-10-10",
