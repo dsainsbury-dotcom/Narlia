@@ -714,6 +714,14 @@ window.NARLIA_CAT_PROFILES={
     ],
     "gallery": [
       {
+        "src": "media/auto-0OcePhikmBKpMi0sZnzPT.webp",
+        "caption": "Amara in her carrier · orange collar · 29 October 2026",
+        "capturedAt": "2026-10-29",
+        "source": "Auto Photos",
+        "autoId": "0OcePhikmBKpMi0sZnzPT",
+        "shared": false
+      },
+      {
         "src": "media/auto-FxCvcu1S-uAz1PZa16iAc.webp",
         "caption": "Dante and Amara together · 9 November 2026",
         "capturedAt": "2026-11-09",
