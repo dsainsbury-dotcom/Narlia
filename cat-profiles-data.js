@@ -22,6 +22,86 @@ window.NARLIA_CAT_PROFILES={
         "shared": false
       },
       {
+        "src": "media/auto-Y4AXxhu8gR6gh5HascAJ9.webp",
+        "caption": "Narlia resting in the grass · 8 July 2026",
+        "capturedAt": "2026-07-08",
+        "source": "Auto Photos",
+        "autoId": "Y4AXxhu8gR6gh5HascAJ9",
+        "shared": false
+      },
+      {
+        "src": "media/auto-UzAxjc-vF4egKqrXiYRjS.webp",
+        "caption": "Narlia grooming in the grass · 8 July 2026",
+        "capturedAt": "2026-07-08",
+        "source": "Auto Photos",
+        "autoId": "UzAxjc-vF4egKqrXiYRjS",
+        "shared": false
+      },
+      {
+        "src": "media/auto-mAQXkCaQcJk3wu5xmXVHe.webp",
+        "caption": "Narlia lounging on the path · 7 July 2026",
+        "capturedAt": "2026-07-07",
+        "source": "Auto Photos",
+        "autoId": "mAQXkCaQcJk3wu5xmXVHe",
+        "shared": false
+      },
+      {
+        "src": "media/auto-JXmVWOupU6WwJIaWm-tr4.webp",
+        "caption": "Narlia resting in the garden · 28 June 2026",
+        "capturedAt": "2026-06-28",
+        "source": "Auto Photos",
+        "autoId": "JXmVWOupU6WwJIaWm-tr4",
+        "shared": false
+      },
+      {
+        "src": "media/auto-dFXxVyA0ZXSOjvaXIWbB5.webp",
+        "caption": "Narlia stretched out on the path · 23 June 2026",
+        "capturedAt": "2026-06-23",
+        "source": "Auto Photos",
+        "autoId": "dFXxVyA0ZXSOjvaXIWbB5",
+        "shared": false
+      },
+      {
+        "src": "media/auto-4hwtEjb7pZRIaiEJUlXP5.webp",
+        "caption": "Narlia resting beside the brick wall · 23 June 2026",
+        "capturedAt": "2026-06-23",
+        "source": "Auto Photos",
+        "autoId": "4hwtEjb7pZRIaiEJUlXP5",
+        "shared": false
+      },
+      {
+        "src": "media/auto-1QtWy5FxuUG6LbFDbheEy.webp",
+        "caption": "Narlia relaxing on the path · 23 June 2026",
+        "capturedAt": "2026-06-23",
+        "source": "Auto Photos",
+        "autoId": "1QtWy5FxuUG6LbFDbheEy",
+        "shared": false
+      },
+      {
+        "src": "media/auto-7yKeDktqJHMAfmlxARcjS.webp",
+        "caption": "Narlia relaxing by the wall · 23 June 2026",
+        "capturedAt": "2026-06-23",
+        "source": "Auto Photos",
+        "autoId": "7yKeDktqJHMAfmlxARcjS",
+        "shared": false
+      },
+      {
+        "src": "media/auto-dlXHt4RE7yeZlJE3AT2t0.webp",
+        "caption": "Narlia standing in the grass · 22 May 2026",
+        "capturedAt": "2026-05-22",
+        "source": "Auto Photos",
+        "autoId": "dlXHt4RE7yeZlJE3AT2t0",
+        "shared": false
+      },
+      {
+        "src": "media/auto-HmwKTkKxtUUtkQKp2VpY7.webp",
+        "caption": "Narlia resting on the bed · 19 January 2026",
+        "capturedAt": "2026-01-19",
+        "source": "Auto Photos",
+        "autoId": "HmwKTkKxtUUtkQKp2VpY7",
+        "shared": false
+      },
+      {
         "src": "media/narlia-2025-10-19-2453.jpeg",
         "caption": "Narlia dozing on the bed · 19 October 2025",
         "capturedAt": "2025-10-19",
@@ -369,6 +449,14 @@ window.NARLIA_CAT_PROFILES={
         "shared": false
       },
       {
+        "src": "media/auto-oUCr731rxzC8ddrIvP5_z.webp",
+        "caption": "Amara in her orange collar · 11 October 2026",
+        "capturedAt": "2026-10-11",
+        "source": "Auto Photos",
+        "autoId": "oUCr731rxzC8ddrIvP5_z",
+        "shared": false
+      },
+      {
         "src": "media/auto-xwwwAb6qQhec2sncQ7pB8.webp",
         "caption": "Dante and Amara with their littermates",
         "capturedAt": "2026-10-10",
@@ -465,12 +553,132 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       },
       {
+        "src": "media/auto-X26rS13wqtiTtORkhfV4o.webp",
+        "caption": "Dante and Amara with their littermate · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "X26rS13wqtiTtORkhfV4o",
+        "shared": true
+      },
+      {
+        "src": "media/auto-ZniA5s0ywaHIRBshnBIz9.webp",
+        "caption": "Dante and Amara playing together · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "ZniA5s0ywaHIRBshnBIz9",
+        "shared": true
+      },
+      {
+        "src": "media/auto-CXzIEj_wXK_DuD_pbL3Iu.webp",
+        "caption": "Dante and Amara playing together · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "CXzIEj_wXK_DuD_pbL3Iu",
+        "shared": true
+      },
+      {
+        "src": "media/auto-0K_cKiLnDLtlHZWJzrjxx.webp",
+        "caption": "Dante and Amara playing together · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "0K_cKiLnDLtlHZWJzrjxx",
+        "shared": true
+      },
+      {
+        "src": "media/auto-71Q9LuYYcch9R0UlEqDcZ.webp",
+        "caption": "Dante and Amara playing with their toy · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "71Q9LuYYcch9R0UlEqDcZ",
+        "shared": true
+      },
+      {
+        "src": "media/auto-SfKrxGcfhIuhrYuJzZpbC.webp",
+        "caption": "Dante and Amara playing with their toy · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "SfKrxGcfhIuhrYuJzZpbC",
+        "shared": true
+      },
+      {
+        "src": "media/auto-dfWJtkYxAC7d8ZCefublb.webp",
+        "caption": "Dante and Amara playing with the feather toy · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "dfWJtkYxAC7d8ZCefublb",
+        "shared": true
+      },
+      {
+        "src": "media/auto-W_fgz2KZlBusjui1XBt50.webp",
+        "caption": "Dante and Amara watching the toy · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "W_fgz2KZlBusjui1XBt50",
+        "shared": true
+      },
+      {
+        "src": "media/auto-sLMiRbmc8bcB_XcRfxhBA.webp",
+        "caption": "Dante and Amara investigating the toy · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "sLMiRbmc8bcB_XcRfxhBA",
+        "shared": true
+      },
+      {
+        "src": "media/auto-2XO_V5b_0pgfXkPu1X6iu.webp",
+        "caption": "Dante and Amara with their littermates · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "2XO_V5b_0pgfXkPu1X6iu",
+        "shared": true
+      },
+      {
         "src": "media/auto-J58OQg-qRfEr1aZHl01Ke.webp",
         "caption": "Dante on a yellow chair · red collar",
         "capturedAt": "2026-09-06",
         "source": "Auto Photos",
         "autoId": "J58OQg-qRfEr1aZHl01Ke",
         "shared": false
+      },
+      {
+        "src": "media/auto-N5retjTs-NbPr1asjhSO4.webp",
+        "caption": "Dante and Amara in their carrier · 10 August 2026",
+        "capturedAt": "2026-08-10",
+        "source": "Auto Photos",
+        "autoId": "N5retjTs-NbPr1asjhSO4",
+        "shared": true
+      },
+      {
+        "src": "media/auto-ZtTdLp-iq9_lkVcKvKZN-.webp",
+        "caption": "Dante and Amara in the carrier · 10 August 2026",
+        "capturedAt": "2026-08-10",
+        "source": "Auto Photos",
+        "autoId": "ZtTdLp-iq9_lkVcKvKZN-",
+        "shared": true
+      },
+      {
+        "src": "media/auto-laZscyKfslroULxQLfaaV.webp",
+        "caption": "Dante with his littermates · 10 August 2026",
+        "capturedAt": "2026-08-10",
+        "source": "Auto Photos",
+        "autoId": "laZscyKfslroULxQLfaaV",
+        "shared": false
+      },
+      {
+        "src": "media/auto-Nc8BNuU52l8gv1Q_aS6dk.webp",
+        "caption": "The kittens with their family · 8 August 2026",
+        "capturedAt": "2026-08-08",
+        "source": "Auto Photos",
+        "autoId": "Nc8BNuU52l8gv1Q_aS6dk",
+        "shared": true
+      },
+      {
+        "src": "media/auto-iUZZzwf2nouGFXpXugEEv.webp",
+        "caption": "Tily nursing the kittens · 6 August 2026",
+        "capturedAt": "2026-08-06",
+        "source": "Auto Photos",
+        "autoId": "iUZZzwf2nouGFXpXugEEv",
+        "shared": true
       },
       {
         "src": "media/dante-portrait-20261101.webp",
@@ -731,6 +939,14 @@ window.NARLIA_CAT_PROFILES={
         "shared": false
       },
       {
+        "src": "media/auto-oUCr731rxzC8ddrIvP5_z.webp",
+        "caption": "Amara in her orange collar · 11 October 2026",
+        "capturedAt": "2026-10-11",
+        "source": "Auto Photos",
+        "autoId": "oUCr731rxzC8ddrIvP5_z",
+        "shared": false
+      },
+      {
         "src": "media/auto-xwwwAb6qQhec2sncQ7pB8.webp",
         "caption": "Dante and Amara with their littermates",
         "capturedAt": "2026-10-10",
@@ -824,6 +1040,118 @@ window.NARLIA_CAT_PROFILES={
         "capturedAt": "2026-09-10",
         "source": "Auto Photos",
         "autoId": "j5RWZvUFQBB7ZN0T3aI10",
+        "shared": true
+      },
+      {
+        "src": "media/auto-X26rS13wqtiTtORkhfV4o.webp",
+        "caption": "Dante and Amara with their littermate · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "X26rS13wqtiTtORkhfV4o",
+        "shared": true
+      },
+      {
+        "src": "media/auto-ZniA5s0ywaHIRBshnBIz9.webp",
+        "caption": "Dante and Amara playing together · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "ZniA5s0ywaHIRBshnBIz9",
+        "shared": true
+      },
+      {
+        "src": "media/auto-CXzIEj_wXK_DuD_pbL3Iu.webp",
+        "caption": "Dante and Amara playing together · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "CXzIEj_wXK_DuD_pbL3Iu",
+        "shared": true
+      },
+      {
+        "src": "media/auto-0K_cKiLnDLtlHZWJzrjxx.webp",
+        "caption": "Dante and Amara playing together · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "0K_cKiLnDLtlHZWJzrjxx",
+        "shared": true
+      },
+      {
+        "src": "media/auto-71Q9LuYYcch9R0UlEqDcZ.webp",
+        "caption": "Dante and Amara playing with their toy · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "71Q9LuYYcch9R0UlEqDcZ",
+        "shared": true
+      },
+      {
+        "src": "media/auto-SfKrxGcfhIuhrYuJzZpbC.webp",
+        "caption": "Dante and Amara playing with their toy · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "SfKrxGcfhIuhrYuJzZpbC",
+        "shared": true
+      },
+      {
+        "src": "media/auto-dfWJtkYxAC7d8ZCefublb.webp",
+        "caption": "Dante and Amara playing with the feather toy · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "dfWJtkYxAC7d8ZCefublb",
+        "shared": true
+      },
+      {
+        "src": "media/auto-W_fgz2KZlBusjui1XBt50.webp",
+        "caption": "Dante and Amara watching the toy · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "W_fgz2KZlBusjui1XBt50",
+        "shared": true
+      },
+      {
+        "src": "media/auto-sLMiRbmc8bcB_XcRfxhBA.webp",
+        "caption": "Dante and Amara investigating the toy · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "sLMiRbmc8bcB_XcRfxhBA",
+        "shared": true
+      },
+      {
+        "src": "media/auto-2XO_V5b_0pgfXkPu1X6iu.webp",
+        "caption": "Dante and Amara with their littermates · 10 September 2026",
+        "capturedAt": "2026-09-10",
+        "source": "Auto Photos",
+        "autoId": "2XO_V5b_0pgfXkPu1X6iu",
+        "shared": true
+      },
+      {
+        "src": "media/auto-N5retjTs-NbPr1asjhSO4.webp",
+        "caption": "Dante and Amara in their carrier · 10 August 2026",
+        "capturedAt": "2026-08-10",
+        "source": "Auto Photos",
+        "autoId": "N5retjTs-NbPr1asjhSO4",
+        "shared": true
+      },
+      {
+        "src": "media/auto-ZtTdLp-iq9_lkVcKvKZN-.webp",
+        "caption": "Dante and Amara in the carrier · 10 August 2026",
+        "capturedAt": "2026-08-10",
+        "source": "Auto Photos",
+        "autoId": "ZtTdLp-iq9_lkVcKvKZN-",
+        "shared": true
+      },
+      {
+        "src": "media/auto-Nc8BNuU52l8gv1Q_aS6dk.webp",
+        "caption": "The kittens with their family · 8 August 2026",
+        "capturedAt": "2026-08-08",
+        "source": "Auto Photos",
+        "autoId": "Nc8BNuU52l8gv1Q_aS6dk",
+        "shared": true
+      },
+      {
+        "src": "media/auto-iUZZzwf2nouGFXpXugEEv.webp",
+        "caption": "Tily nursing the kittens · 6 August 2026",
+        "capturedAt": "2026-08-06",
+        "source": "Auto Photos",
+        "autoId": "iUZZzwf2nouGFXpXugEEv",
         "shared": true
       },
       {
