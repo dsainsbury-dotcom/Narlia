@@ -305,6 +305,14 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       },
       {
+        "src": "media/auto-jF_DfFy00lzPahfHgJQd5.webp",
+        "caption": "Dante sitting on his favourite chair · 7 November 2026",
+        "capturedAt": "2026-11-07",
+        "source": "Auto Photos",
+        "autoId": "jF_DfFy00lzPahfHgJQd5",
+        "shared": false
+      },
+      {
         "src": "media/auto-nAUo1g0wh4Fpy6srwsgDC.webp",
         "caption": "Dante and Amara cuddling together · 6 November 2026",
         "capturedAt": "2026-11-06",
@@ -337,6 +345,14 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       },
       {
+        "src": "media/auto-zVvmiwTFDNaXZdSTiZR24.webp",
+        "caption": "Dante and Amara exploring the packing paper · 4 November 2026",
+        "capturedAt": "2026-11-04",
+        "source": "Auto Photos",
+        "autoId": "zVvmiwTFDNaXZdSTiZR24",
+        "shared": true
+      },
+      {
         "src": "media/auto-YZw5MESP_uJmvgTRFfRUF.webp",
         "caption": "Dante and Amara asleep together in their basket · 3 November 2026",
         "capturedAt": "2026-11-03",
@@ -358,6 +374,14 @@ window.NARLIA_CAT_PROFILES={
         "capturedAt": "2026-11-02",
         "source": "Auto Photos",
         "autoId": "AEfXqVFJlkm8OgO4Tb4Op",
+        "shared": true
+      },
+      {
+        "src": "media/auto-nVvKDemwDKOifxJ1cY_HB.webp",
+        "caption": "Dante and Amara high up on their cat tree · 2 November 2026",
+        "capturedAt": "2026-11-02",
+        "source": "Auto Photos",
+        "autoId": "nVvKDemwDKOifxJ1cY_HB",
         "shared": true
       },
       {
@@ -401,6 +425,22 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       },
       {
+        "src": "media/auto-_B8BuFFOMC2EZpNcijpS1.webp",
+        "caption": "Dante and Amara napping together on the chair · 31 October 2026",
+        "capturedAt": "2026-10-31",
+        "source": "Auto Photos",
+        "autoId": "_B8BuFFOMC2EZpNcijpS1",
+        "shared": true
+      },
+      {
+        "src": "media/auto-4_56bwuVHLYf9jSIUIyV8.webp",
+        "caption": "Dante and Amara sleeping in their pen at night · 31 October 2026",
+        "capturedAt": "2026-10-31",
+        "source": "Auto Photos",
+        "autoId": "4_56bwuVHLYf9jSIUIyV8",
+        "shared": true
+      },
+      {
         "src": "media/auto-W_31BJqo086wf94YMdpTm.webp",
         "caption": "Dante with his blue collar · 30 October 2026",
         "capturedAt": "2026-10-30",
@@ -430,6 +470,22 @@ window.NARLIA_CAT_PROFILES={
         "capturedAt": "2026-10-30",
         "source": "Auto Photos",
         "autoId": "vXKKo3XijzOUyp41y80Q7",
+        "shared": true
+      },
+      {
+        "src": "media/auto-2-v3lWFHNrlBCOgl27sEs.webp",
+        "caption": "Dante and Amara investigating their yellow feeder · 30 October 2026",
+        "capturedAt": "2026-10-30",
+        "source": "Auto Photos",
+        "autoId": "2-v3lWFHNrlBCOgl27sEs",
+        "shared": true
+      },
+      {
+        "src": "media/auto-Sn9zrBvK_4bRiosR6D04K.webp",
+        "caption": "Dante and Amara together by their feeder · 30 October 2026",
+        "capturedAt": "2026-10-30",
+        "source": "Auto Photos",
+        "autoId": "Sn9zrBvK_4bRiosR6D04K",
         "shared": true
       },
       {
@@ -714,14 +770,6 @@ window.NARLIA_CAT_PROFILES={
     ],
     "gallery": [
       {
-        "src": "media/auto-0OcePhikmBKpMi0sZnzPT.webp",
-        "caption": "Amara in her carrier · orange collar · 29 October 2026",
-        "capturedAt": "2026-10-29",
-        "source": "Auto Photos",
-        "autoId": "0OcePhikmBKpMi0sZnzPT",
-        "shared": false
-      },
-      {
         "src": "media/auto-FxCvcu1S-uAz1PZa16iAc.webp",
         "caption": "Dante and Amara together · 9 November 2026",
         "capturedAt": "2026-11-09",
@@ -826,6 +874,14 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       },
       {
+        "src": "media/auto-zVvmiwTFDNaXZdSTiZR24.webp",
+        "caption": "Dante and Amara exploring the packing paper · 4 November 2026",
+        "capturedAt": "2026-11-04",
+        "source": "Auto Photos",
+        "autoId": "zVvmiwTFDNaXZdSTiZR24",
+        "shared": true
+      },
+      {
         "src": "media/auto-YZw5MESP_uJmvgTRFfRUF.webp",
         "caption": "Dante and Amara asleep together in their basket · 3 November 2026",
         "capturedAt": "2026-11-03",
@@ -856,6 +912,14 @@ window.NARLIA_CAT_PROFILES={
         "source": "Auto Photos",
         "autoId": "3tPrO4njo0xWz63KjBGlt",
         "shared": false
+      },
+      {
+        "src": "media/auto-nVvKDemwDKOifxJ1cY_HB.webp",
+        "caption": "Dante and Amara high up on their cat tree · 2 November 2026",
+        "capturedAt": "2026-11-02",
+        "source": "Auto Photos",
+        "autoId": "nVvKDemwDKOifxJ1cY_HB",
+        "shared": true
       },
       {
         "src": "media/auto-U4Y0if-1IeuvE8_mZFLHb.webp",
@@ -899,6 +963,22 @@ window.NARLIA_CAT_PROFILES={
         "shared": false
       },
       {
+        "src": "media/auto-_B8BuFFOMC2EZpNcijpS1.webp",
+        "caption": "Dante and Amara napping together on the chair · 31 October 2026",
+        "capturedAt": "2026-10-31",
+        "source": "Auto Photos",
+        "autoId": "_B8BuFFOMC2EZpNcijpS1",
+        "shared": true
+      },
+      {
+        "src": "media/auto-4_56bwuVHLYf9jSIUIyV8.webp",
+        "caption": "Dante and Amara sleeping in their pen at night · 31 October 2026",
+        "capturedAt": "2026-10-31",
+        "source": "Auto Photos",
+        "autoId": "4_56bwuVHLYf9jSIUIyV8",
+        "shared": true
+      },
+      {
         "src": "media/auto-jzLjt7HPfIJnLeFqoiatJ.webp",
         "caption": "Amara with her pink collar · 30 October 2026",
         "capturedAt": "2026-10-30",
@@ -921,6 +1001,46 @@ window.NARLIA_CAT_PROFILES={
         "source": "Auto Photos",
         "autoId": "vXKKo3XijzOUyp41y80Q7",
         "shared": true
+      },
+      {
+        "src": "media/auto-QzLq3Glv0BQUKSFkP7iAI.webp",
+        "caption": "Amara dozing on a lap · 30 October 2026",
+        "capturedAt": "2026-10-30",
+        "source": "Auto Photos",
+        "autoId": "QzLq3Glv0BQUKSFkP7iAI",
+        "shared": false
+      },
+      {
+        "src": "media/auto-0yvbTiPCydo3RocBqGP37.webp",
+        "caption": "Amara asleep wearing her pink collar · 30 October 2026",
+        "capturedAt": "2026-10-30",
+        "source": "Auto Photos",
+        "autoId": "0yvbTiPCydo3RocBqGP37",
+        "shared": false
+      },
+      {
+        "src": "media/auto-2-v3lWFHNrlBCOgl27sEs.webp",
+        "caption": "Dante and Amara investigating their yellow feeder · 30 October 2026",
+        "capturedAt": "2026-10-30",
+        "source": "Auto Photos",
+        "autoId": "2-v3lWFHNrlBCOgl27sEs",
+        "shared": true
+      },
+      {
+        "src": "media/auto-Sn9zrBvK_4bRiosR6D04K.webp",
+        "caption": "Dante and Amara together by their feeder · 30 October 2026",
+        "capturedAt": "2026-10-30",
+        "source": "Auto Photos",
+        "autoId": "Sn9zrBvK_4bRiosR6D04K",
+        "shared": true
+      },
+      {
+        "src": "media/auto-0OcePhikmBKpMi0sZnzPT.webp",
+        "caption": "Amara in her carrier · orange collar · 29 October 2026",
+        "capturedAt": "2026-10-29",
+        "source": "Auto Photos",
+        "autoId": "0OcePhikmBKpMi0sZnzPT",
+        "shared": false
       },
       {
         "src": "media/auto-enWWHO2SGAFXz3uzGH2r3.webp",
