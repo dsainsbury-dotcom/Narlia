@@ -211,8 +211,8 @@ window.NARLIA_CAT_PROFILES={
       "now": "blue"
     },
     "photo": "media/dante-portrait-20261101.webp",
-    "lastWeightKg": 2,
-    "weightDate": "2026-11-06",
+    "lastWeightKg": 2.5,
+    "weightDate": "2026-11-16",
     "weights": [
       {
         "date": "2026-10-27",
@@ -221,6 +221,10 @@ window.NARLIA_CAT_PROFILES={
       {
         "date": "2026-11-06",
         "kg": 2
+      },
+      {
+        "date": "2026-11-16",
+        "kg": 2.5
       }
     ],
     "gallery": [
@@ -755,8 +759,8 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       }
     ],
-    "growthChart": "media/dante-growth-chart-2026-11-06.png",
-    "weightTrendNote": "Up 0.2 kg since last week, as reported on 6 November 2026.",
+    "growthChart": "media/dante-growth-chart-2026-11-16.png",
+    "weightTrendNote": "Up 0.5 kg since the previous weigh-in on 6 November 2026.",
     "registrationNumber": "CS1234204",
     "colour": "Chocolate"
   },
@@ -772,8 +776,8 @@ window.NARLIA_CAT_PROFILES={
       "now": "pink"
     },
     "photo": "media/amara-portrait-20261101.webp",
-    "lastWeightKg": 1.8,
-    "weightDate": "2026-11-06",
+    "lastWeightKg": 2,
+    "weightDate": "2026-11-16",
     "weights": [
       {
         "date": "2026-10-27",
@@ -782,6 +786,10 @@ window.NARLIA_CAT_PROFILES={
       {
         "date": "2026-11-06",
         "kg": 1.8
+      },
+      {
+        "date": "2026-11-16",
+        "kg": 2
       }
     ],
     "gallery": [
@@ -1309,8 +1317,8 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       }
     ],
-    "growthChart": "media/amara-growth-chart-2026-11-06.png",
-    "weightTrendNote": "Up 0.2 kg since last week, as reported on 6 November 2026.",
+    "growthChart": "media/amara-growth-chart-2026-11-16.png",
+    "weightTrendNote": "Up 0.2 kg since the previous weigh-in on 6 November 2026.",
     "registrationNumber": "CS1234205",
     "colour": "Lilac"
   },
