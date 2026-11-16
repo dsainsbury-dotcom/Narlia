@@ -49,9 +49,23 @@
     if(!ready()||document.getElementById('infographicModeSwitch'))return;const section=document.getElementById('infographic'),telemetry=section.querySelector('.telemetry');if(!telemetry)return;
     const buttons=latestDays().map(d=>`<button class="infographic-mode" data-mode="day:${d.date}">${String(d.label||d.date).replace(/^\w+\s+/,'')}</button>`).join('')+`<button class="infographic-mode active" data-mode="recent">Recent (7 Days)</button><button class="infographic-mode" data-mode="all">All Time</button>`;
     const bar=document.createElement('div');bar.id='infographicModeSwitch';bar.innerHTML=`<style>.infographic-switch{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 14px;padding:10px 12px;background:#0c1927;border:1px solid #253649;border-radius:10px}.infographic-switch-buttons{display:flex;gap:7px;flex-wrap:wrap}.infographic-mode{border:1px solid #26394a;background:#0d1a27;color:#cbd6de;border-radius:7px;padding:9px 13px;font-weight:700;cursor:pointer}.infographic-mode.active{background:#15314a;border-color:#2d7db9;color:#fff}.infographic-mode-note{color:#8fa6b7;font-size:12px}</style><div><b>Infographic</b><div id="infographicModeSubtitle" class="infographic-mode-note">Recent • Last 7 Days</div></div><div class="infographic-switch-buttons">${buttons}</div>`;
-    section.insertBefore(bar,telemetry);bar.querySelectorAll('.infographic-mode').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.mode)));let mode='recent';try{const saved=localStorage.getItem('narliaInfographicMode');if(saved==='all'||saved==='recent'||String(saved).startsWith('day:'))mode=saved}catch(e){}setTimeout(()=>apply(mode),100);console.info('Narlia infographic controller',BUILD)
+    section.insertBefore(bar,telemetry);bar.querySelectorAll('.infographic-mode').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.mode)));let mode='recent';try{const saved=localStorage.getItem('narliaInfographicMode');if(saved==='all'||saved==='recent'||String(saved).startsWith('day:'))mode=saved}catch(e){}if(String(mode).startsWith('day:')&&!latestDays().some(d=>'day:'+d.date===mode))mode=latestDays().length?'day:'+latestDays()[0].date:'recent';setTimeout(()=>apply(mode),100);console.info('Narlia infographic controller',BUILD)
   }
-  function refreshAfterDataUpdate(){if(!ready())return;let mode=document.querySelector('#infographicModeSwitch .infographic-mode.active')?.dataset.mode; if(!mode){try{mode=localStorage.getItem('narliaInfographicMode')}catch(e){}} if(!mode)mode='recent'; if(String(mode).startsWith('day:')&&!selectedDay(mode))mode='recent'; apply(mode)}
+  function refreshAfterDataUpdate(){
+    if(!ready())return;
+    const holder=document.querySelector('#infographicModeSwitch .infographic-switch-buttons');
+    let mode=document.querySelector('#infographicModeSwitch .infographic-mode.active')?.dataset.mode;
+    if(!mode){try{mode=localStorage.getItem('narliaInfographicMode')}catch(e){}}
+    if(!mode)mode='recent';
+    if(holder){
+      const days=latestDays();
+      holder.innerHTML=days.map(d=>'<button class="infographic-mode" data-mode="day:'+d.date+'">'+String(d.label||d.date).split(' ').slice(-2).join(' ')+'</button>').join('')+'<button class="infographic-mode" data-mode="recent">Recent (7 Days)</button><button class="infographic-mode" data-mode="all">All Time</button>';
+      holder.querySelectorAll('.infographic-mode').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.mode)));
+      if(String(mode).startsWith('day:')&&!days.some(d=>'day:'+d.date===mode))mode=days.length?'day:'+days[0].date:'recent';
+    }
+    if(String(mode).startsWith('day:')&&!selectedDay(mode))mode='recent';
+    apply(mode);
+  }
   window.NARLIA_REFRESH_INFOGRAPHIC=refreshAfterDataUpdate;
   window.addEventListener('narlia:data-updated',()=>setTimeout(refreshAfterDataUpdate,0));
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install);else install();setTimeout(install,250);
