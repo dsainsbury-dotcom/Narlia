@@ -225,6 +225,22 @@ window.NARLIA_CAT_PROFILES={
     ],
     "gallery": [
       {
+        "src": "media/auto-kYoDPt22Bd6uet5UD1rf1.webp",
+        "caption": "Dante and Amara curled up together · 16 November 2026",
+        "capturedAt": "2026-11-16",
+        "source": "Auto Photos",
+        "autoId": "kYoDPt22Bd6uet5UD1rf1",
+        "shared": true
+      },
+      {
+        "src": "media/auto-rE4QPe5WscSMi4zN2_E1H.webp",
+        "caption": "Dante resting in his blue collar · 13 November 2026",
+        "capturedAt": "2026-11-13",
+        "source": "Auto Photos",
+        "autoId": "rE4QPe5WscSMi4zN2_E1H",
+        "shared": false
+      },
+      {
         "src": "media/auto--c-gGaGSDy7WQ_loyAjre.webp",
         "caption": "Dante relaxing in his chair · 9 November 2026",
         "capturedAt": "2026-11-09",
@@ -769,6 +785,14 @@ window.NARLIA_CAT_PROFILES={
       }
     ],
     "gallery": [
+      {
+        "src": "media/auto-kYoDPt22Bd6uet5UD1rf1.webp",
+        "caption": "Dante and Amara curled up together · 16 November 2026",
+        "capturedAt": "2026-11-16",
+        "source": "Auto Photos",
+        "autoId": "kYoDPt22Bd6uet5UD1rf1",
+        "shared": true
+      },
       {
         "src": "media/auto-FxCvcu1S-uAz1PZa16iAc.webp",
         "caption": "Dante and Amara together · 9 November 2026",
