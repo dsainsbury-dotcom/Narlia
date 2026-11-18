@@ -1,5 +1,10 @@
 # Narlia's World - Changelog
 
+## 18 November 2026 - Burmese History full-page fix
+- Replaced the modal overlay with a normal in-flow app page. Only the active page is visible, and document scrolling now moves the history itself.
+- Removed background scroll locking and touch/key input interception so the story does not sit over the dashboard.
+- The Back button returns to the page and scroll position that were open before the history tab.
+
 ## 18 November 2026 - Burmese History scroll fix
 - Moved the history view to a top-level overlay so app containers cannot trap or scroll behind it.
 - Locked the background page and blocked wheel, touch and keyboard scrolling from leaking out of the story.
