@@ -1,3 +1,12 @@
+# Narlia's World - Changelog
+
+## 18 November 2026 - Burmese history one-pager
+- Added a visual Burmese History page to the app for Dante and Amara.
+- Summarised the breed's early history, British recognition, colour milestones and ten GCCF colour names.
+- Used Dante and Amara's existing profile photographs and highlighted their chocolate and lilac coats.
+- Added links to both breed-club histories and the Burmese Cat Club's colour and temperament pages.
+- Reviewed current Auto Photos cat matches; new candidates did not have sufficiently clear identity for a safe gallery assignment, so no uncertain image was added.
+
 ## 1 November 2026 - Narlia photo profile
 
 - Checked Auto Photos for the adult tabby Narlia. Found one plausible genuine tabby photo (13 September, window perch), excluding screenshots, product adverts and kitten photos.
