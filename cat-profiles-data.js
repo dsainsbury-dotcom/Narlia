@@ -229,11 +229,43 @@ window.NARLIA_CAT_PROFILES={
     ],
     "gallery": [
       {
+        "src": "media/auto-gnJEzABzwjTf7RUJtMcHq.webp",
+        "caption": "Dante asleep on his fluffy blanket · 17 November 2026",
+        "capturedAt": "2026-11-17",
+        "source": "Auto Photos",
+        "autoId": "gnJEzABzwjTf7RUJtMcHq",
+        "shared": false
+      },
+      {
+        "src": "media/auto-8fMlCSjZG9Uz1COb2UFGC.webp",
+        "caption": "Dante and Amara cuddled together in their cave bed · 16 November 2026",
+        "capturedAt": "2026-11-16",
+        "source": "Auto Photos",
+        "autoId": "8fMlCSjZG9Uz1COb2UFGC",
+        "shared": true
+      },
+      {
         "src": "media/auto-kYoDPt22Bd6uet5UD1rf1.webp",
         "caption": "Dante and Amara curled up together · 16 November 2026",
         "capturedAt": "2026-11-16",
         "source": "Auto Photos",
         "autoId": "kYoDPt22Bd6uet5UD1rf1",
+        "shared": true
+      },
+      {
+        "src": "media/auto-YvusGLAoQyXyYhhnSLHnq.webp",
+        "caption": "Dante and Amara curled up together on their blanket · 14 November 2026",
+        "capturedAt": "2026-11-14",
+        "source": "Auto Photos",
+        "autoId": "YvusGLAoQyXyYhhnSLHnq",
+        "shared": true
+      },
+      {
+        "src": "media/auto-nx-VgDNzDtYOIbCL8zWQz.webp",
+        "caption": "Dante and Amara lounging together on the sofa · 13 November 2026",
+        "capturedAt": "2026-11-13",
+        "source": "Auto Photos",
+        "autoId": "nx-VgDNzDtYOIbCL8zWQz",
         "shared": true
       },
       {
@@ -794,11 +826,51 @@ window.NARLIA_CAT_PROFILES={
     ],
     "gallery": [
       {
+        "src": "media/auto-9PZjcQ6ubD5dqXLGJLafo.webp",
+        "caption": "Amara curled up asleep in the plush bed · 17 November 2026",
+        "capturedAt": "2026-11-17",
+        "source": "Auto Photos",
+        "autoId": "9PZjcQ6ubD5dqXLGJLafo",
+        "shared": false
+      },
+      {
+        "src": "media/auto-FomF36C-ojFyvyO4pBHsL.webp",
+        "caption": "Amara stretched out beside her toy · 17 November 2026",
+        "capturedAt": "2026-11-17",
+        "source": "Auto Photos",
+        "autoId": "FomF36C-ojFyvyO4pBHsL",
+        "shared": false
+      },
+      {
+        "src": "media/auto-8fMlCSjZG9Uz1COb2UFGC.webp",
+        "caption": "Dante and Amara cuddled together in their cave bed · 16 November 2026",
+        "capturedAt": "2026-11-16",
+        "source": "Auto Photos",
+        "autoId": "8fMlCSjZG9Uz1COb2UFGC",
+        "shared": true
+      },
+      {
         "src": "media/auto-kYoDPt22Bd6uet5UD1rf1.webp",
         "caption": "Dante and Amara curled up together · 16 November 2026",
         "capturedAt": "2026-11-16",
         "source": "Auto Photos",
         "autoId": "kYoDPt22Bd6uet5UD1rf1",
+        "shared": true
+      },
+      {
+        "src": "media/auto-YvusGLAoQyXyYhhnSLHnq.webp",
+        "caption": "Dante and Amara curled up together on their blanket · 14 November 2026",
+        "capturedAt": "2026-11-14",
+        "source": "Auto Photos",
+        "autoId": "YvusGLAoQyXyYhhnSLHnq",
+        "shared": true
+      },
+      {
+        "src": "media/auto-nx-VgDNzDtYOIbCL8zWQz.webp",
+        "caption": "Dante and Amara lounging together on the sofa · 13 November 2026",
+        "capturedAt": "2026-11-13",
+        "source": "Auto Photos",
+        "autoId": "nx-VgDNzDtYOIbCL8zWQz",
         "shared": true
       },
       {
