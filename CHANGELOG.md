@@ -1,5 +1,11 @@
 # Narlia's World - Changelog
 
+## 18 November 2026 - Burmese colour mosaic
+- Added a pictorial mosaic of the ten GCCF Burmese colours to the history page.
+- Kept Dante and Amara’s real portraits in their Chocolate and Lilac tiles; labelled the remaining portraits as colour examples.
+- Confirmed the colour names against the Burmese Cat Club’s EMS chart.
+
+
 ## 18 November 2026 - Burmese History full-page fix
 - Replaced the modal overlay with a normal in-flow app page. Only the active page is visible, and document scrolling now moves the history itself.
 - Removed background scroll locking and touch/key input interception so the story does not sit over the dashboard.
