@@ -1,5 +1,10 @@
 # Narlia's World - Changelog
 
+## 18 November 2026 - Burmese tortie colour contrast
+- Refined the Chocolate Tortie portrait so its red patches are easier to distinguish from solid Brown at a glance.
+- Kept the full ten-colour mosaic, with Dante and Amara’s real portraits still highlighted for Chocolate and Lilac.
+
+
 ## 18 November 2026 - Burmese colour mosaic
 - Added a pictorial mosaic of the ten GCCF Burmese colours to the history page.
 - Kept Dante and Amara’s real portraits in their Chocolate and Lilac tiles; labelled the remaining portraits as colour examples.
