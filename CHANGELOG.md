@@ -1,5 +1,12 @@
 # Narlia's World - Changelog
 
+## 18 November 2026 - Burmese History overlay fix
+- Changed the Burmese History tab into a full-screen in-app overlay with its own scroll area.
+- Locked background scrolling while open; added a back button, Escape-key close, and focus restoration.
+- Kept the one-pager layout and print view; hid the navigation bar from print output.
+- Checked the full Auto Photos library. Two recent cat candidates lacked clear collar identification and another included a third kitten, so no uncertain photo was added.
+
+
 ## 18 November 2026 - Burmese history one-pager
 - Added a visual Burmese History page to the app for Dante and Amara.
 - Summarised the breed's early history, British recognition, colour milestones and ten GCCF colour names.
