@@ -211,8 +211,8 @@ window.NARLIA_CAT_PROFILES={
       "now": "blue"
     },
     "photo": "media/dante-portrait-20261101.webp",
-    "lastWeightKg": 2.5,
-    "weightDate": "2026-11-16",
+    "lastWeightKg": 2.7,
+    "weightDate": "2026-11-20",
     "weights": [
       {
         "date": "2026-10-27",
@@ -225,9 +225,45 @@ window.NARLIA_CAT_PROFILES={
       {
         "date": "2026-11-16",
         "kg": 2.5
+      },
+      {
+        "date": "2026-11-20",
+        "kg": 2.7
       }
     ],
     "gallery": [
+      {
+        "src": "media/auto-E06s-MlJHwqfgmx81Dqyf.webp",
+        "caption": "Amara resting beside Dante, close up · 19 November 2026",
+        "capturedAt": "2026-11-19",
+        "source": "Auto Photos",
+        "autoId": "E06s-MlJHwqfgmx81Dqyf",
+        "shared": true
+      },
+      {
+        "src": "media/auto-0WAwz9LV2bWrVaMbs-zrp.webp",
+        "caption": "Dante and Amara snoozing together on the chair · 19 November 2026",
+        "capturedAt": "2026-11-19",
+        "source": "Auto Photos",
+        "autoId": "0WAwz9LV2bWrVaMbs-zrp",
+        "shared": true
+      },
+      {
+        "src": "media/auto-uEmVTqPqrmxhOLjYmuLH9.webp",
+        "caption": "Dante and Amara stretched out together on their blanket · 19 November 2026",
+        "capturedAt": "2026-11-19",
+        "source": "Auto Photos",
+        "autoId": "uEmVTqPqrmxhOLjYmuLH9",
+        "shared": true
+      },
+      {
+        "src": "media/auto-aUTF0a1EkwVSSi7ytmh1b.webp",
+        "caption": "Dante enjoying a gentle head rub · 19 November 2026",
+        "capturedAt": "2026-11-19",
+        "source": "Auto Photos",
+        "autoId": "aUTF0a1EkwVSSi7ytmh1b",
+        "shared": false
+      },
       {
         "src": "media/auto-gnJEzABzwjTf7RUJtMcHq.webp",
         "caption": "Dante asleep on his fluffy blanket · 17 November 2026",
@@ -791,8 +827,8 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       }
     ],
-    "growthChart": "media/dante-growth-chart-2026-11-16.png",
-    "weightTrendNote": "Up 0.5 kg since the previous weigh-in on 6 November 2026.",
+    "growthChart": "media/dante-growth-chart-2026-11-20.png",
+    "weightTrendNote": "Up 0.2 kg since 16 November 2026, over 4 days. Up 1.0 kg since the first recorded weigh-in on 27 October 2026.",
     "registrationNumber": "CS1234204",
     "colour": "Chocolate"
   },
@@ -808,8 +844,8 @@ window.NARLIA_CAT_PROFILES={
       "now": "pink"
     },
     "photo": "media/amara-portrait-20261101.webp",
-    "lastWeightKg": 2,
-    "weightDate": "2026-11-16",
+    "lastWeightKg": 2.1,
+    "weightDate": "2026-11-20",
     "weights": [
       {
         "date": "2026-10-27",
@@ -822,9 +858,37 @@ window.NARLIA_CAT_PROFILES={
       {
         "date": "2026-11-16",
         "kg": 2
+      },
+      {
+        "date": "2026-11-20",
+        "kg": 2.1
       }
     ],
     "gallery": [
+      {
+        "src": "media/auto-E06s-MlJHwqfgmx81Dqyf.webp",
+        "caption": "Amara resting beside Dante, close up · 19 November 2026",
+        "capturedAt": "2026-11-19",
+        "source": "Auto Photos",
+        "autoId": "E06s-MlJHwqfgmx81Dqyf",
+        "shared": true
+      },
+      {
+        "src": "media/auto-0WAwz9LV2bWrVaMbs-zrp.webp",
+        "caption": "Dante and Amara snoozing together on the chair · 19 November 2026",
+        "capturedAt": "2026-11-19",
+        "source": "Auto Photos",
+        "autoId": "0WAwz9LV2bWrVaMbs-zrp",
+        "shared": true
+      },
+      {
+        "src": "media/auto-uEmVTqPqrmxhOLjYmuLH9.webp",
+        "caption": "Dante and Amara stretched out together on their blanket · 19 November 2026",
+        "capturedAt": "2026-11-19",
+        "source": "Auto Photos",
+        "autoId": "uEmVTqPqrmxhOLjYmuLH9",
+        "shared": true
+      },
       {
         "src": "media/auto-9PZjcQ6ubD5dqXLGJLafo.webp",
         "caption": "Amara curled up asleep in the plush bed · 17 November 2026",
@@ -1389,8 +1453,8 @@ window.NARLIA_CAT_PROFILES={
         "shared": true
       }
     ],
-    "growthChart": "media/amara-growth-chart-2026-11-16.png",
-    "weightTrendNote": "Up 0.2 kg since the previous weigh-in on 6 November 2026.",
+    "growthChart": "media/amara-growth-chart-2026-11-20.png",
+    "weightTrendNote": "Up 0.1 kg since 16 November 2026, over 4 days. Up 0.5 kg since the first recorded weigh-in on 27 October 2026.",
     "registrationNumber": "CS1234205",
     "colour": "Lilac"
   },
