@@ -1459,6 +1459,6 @@ window.NARLIA_CAT_PROFILES={
     "colour": "Lilac"
   },
   "kittenWatch": {
-    "youtubeUrl": "https://www.youtube.com/watch?v=KjrfGelet04"
+    "youtubeUrl": "https://www.youtube.com/watch?v=JYi3p7YqbNI"
   }
 };
